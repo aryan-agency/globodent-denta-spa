@@ -69,6 +69,7 @@ const doctors = [
     education: "Dr. Harvansh Singh Judge Institute (Punjab University)",
     experience: ["Safdarjung Hospital, New Delhi", "Lady Hardinge Medical College, New Delhi"],
     focus: "Advanced dental rehabilitation using cutting-edge modern technology for complete smile transformations.",
+    img: drAanchal, badge: "10+ Years Experience",
   },
   {
     name: "Dr. Rohit Bansal", title: "B.D.S, M.D.S", role: "Endodontist (Root Canal Specialist)",
@@ -76,6 +77,7 @@ const doctors = [
     education: "Manipal University & PDM Dental College",
     experience: ["Former Assistant Professor at ITS Dental College", "National dental conferences (IACDE)"],
     focus: "Expert in painless root canal treatments, cosmetic and restorative dentistry with meticulous precision.",
+    img: drRohit, badge: "Advanced Dental Specialist",
   },
 ];
 
