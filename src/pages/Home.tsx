@@ -88,6 +88,26 @@ const testimonials = [
   { name: "Vikram T.", text: "Got dental implants here. The best implant specialist in Malviya Nagar. Professional, clean, and caring.", rating: 5 },
 ];
 
+const FaqItem = ({ question, answer }: { question: string; answer: string }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <button
+      onClick={() => setOpen(!open)}
+      className="w-full text-left bg-card rounded-xl border border-border p-5 transition-all duration-300 hover:border-primary/30 hover:shadow-md"
+    >
+      <div className="flex items-center justify-between gap-4">
+        <h3 className="font-heading text-base font-medium">{question}</h3>
+        <span className="shrink-0 h-8 w-8 rounded-full bg-spa-blue-light flex items-center justify-center transition-transform duration-300" style={{ transform: open ? 'rotate(180deg)' : '' }}>
+          {open ? <Minus className="h-4 w-4 text-primary" /> : <Plus className="h-4 w-4 text-primary" />}
+        </span>
+      </div>
+      <div className={`overflow-hidden transition-all duration-300 ${open ? 'max-h-40 mt-3 opacity-100' : 'max-h-0 opacity-0'}`}>
+        <p className="text-muted-foreground text-sm leading-relaxed">{answer}</p>
+      </div>
+    </button>
+  );
+};
+
 /* ── Component ── */
 const Home = () => {
   const [reviewIdx, setReviewIdx] = useState(0);
