@@ -1,4 +1,4 @@
-import { Shield, Zap, Users, IndianRupee, Heart, Star, ChevronLeft, ChevronRight, MapPin, Phone, Clock, ArrowRight } from "lucide-react";
+import { Shield, Zap, Users, IndianRupee, Heart, Star, ChevronLeft, ChevronRight, MapPin, Phone, Clock, ArrowRight, Plus, Minus } from "lucide-react";
 import { useState, useEffect, useCallback, useRef } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 import { WHATSAPP_LINK, PHONE_LINK, CLINIC_ADDRESS, PHONE_NUMBER, CLINIC_HOURS, GOOGLE_MAPS_LINK } from "@/lib/constants";
