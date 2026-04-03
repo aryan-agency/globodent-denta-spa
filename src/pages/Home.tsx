@@ -1,9 +1,31 @@
-import { Shield, Zap, Users, IndianRupee, Heart, Star, ChevronLeft, ChevronRight, MapPin, Phone, Clock } from "lucide-react";
+import { Shield, Zap, Users, IndianRupee, Heart, Star, ChevronLeft, ChevronRight, MapPin, Phone, Clock, ArrowRight } from "lucide-react";
 import { useState, useEffect, useCallback, useRef } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 import { WHATSAPP_LINK, PHONE_LINK, CLINIC_ADDRESS, PHONE_NUMBER, CLINIC_HOURS, GOOGLE_MAPS_LINK } from "@/lib/constants";
 import ClinicSlider from "@/components/ClinicSlider";
 import ScrollReveal from "@/components/ScrollReveal";
+
+import serviceImplants from "@/assets/service-implants.jpg";
+import serviceAligners from "@/assets/service-aligners.jpg";
+import serviceFullmouth from "@/assets/service-fullmouth.jpg";
+import serviceRct from "@/assets/service-rct.jpg";
+import serviceCosmetic from "@/assets/service-cosmetic.jpg";
+import serviceWhitening from "@/assets/service-whitening.jpg";
+import serviceCrown from "@/assets/service-crown.jpg";
+import serviceSmile from "@/assets/service-smile.jpg";
+import serviceMetalbraces from "@/assets/service-metalbraces.jpg";
+import serviceCeramic from "@/assets/service-ceramic.jpg";
+import serviceExtraction from "@/assets/service-extraction.jpg";
+import serviceVeneers from "@/assets/service-veneers.jpg";
+import serviceDentures from "@/assets/service-dentures.jpg";
+import serviceCleaning from "@/assets/service-cleaning.jpg";
+import serviceXray from "@/assets/service-xray.jpg";
+import serviceGum from "@/assets/service-gum.jpg";
+import servicePerio from "@/assets/service-perio.jpg";
+import serviceImplantDenture from "@/assets/service-implant-denture.jpg";
+import serviceFilling from "@/assets/service-filling.jpg";
+import serviceSurgery from "@/assets/service-surgery.jpg";
+import servicePostcore from "@/assets/service-postcore.jpg";
 
 /* ── Data ── */
 const whyChoose = [
