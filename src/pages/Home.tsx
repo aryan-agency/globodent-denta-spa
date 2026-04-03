@@ -156,27 +156,48 @@ const Home = () => {
       </section>
 
       {/* ══ SERVICES ══ */}
-      <section id="services" className="section-padding">
-        <div className="container mx-auto">
+      <section id="services" className="section-padding relative overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--spa-blue-light)) 50%, hsl(var(--background)) 100%)' }}>
+        {/* Ambient glow orbs */}
+        <div className="absolute top-20 left-1/4 w-96 h-96 rounded-full opacity-20 blur-3xl pointer-events-none" style={{ background: 'radial-gradient(circle, hsl(var(--primary) / 0.3), transparent)' }} />
+        <div className="absolute bottom-20 right-1/4 w-80 h-80 rounded-full opacity-15 blur-3xl pointer-events-none" style={{ background: 'radial-gradient(circle, hsl(190 80% 55% / 0.25), transparent)' }} />
+
+        <div className="container mx-auto relative z-10">
           <ScrollReveal>
-            <div className="text-center mb-12">
-              <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-2">Our Services</p>
-              <h2 className="text-3xl md:text-4xl font-heading mb-4">Comprehensive Dental Care</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-sm">From routine cleanings to advanced implantology — affordable, pain-free dental care at the best clinic in Malviya Nagar.</p>
+            <div className="text-center mb-16">
+              <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-3">Our Services</p>
+              <h2 className="text-3xl md:text-5xl font-heading mb-5">Comprehensive Dental Care</h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">From routine cleanings to advanced implantology — affordable, pain-free dental care at the best clinic in Malviya Nagar.</p>
             </div>
           </ScrollReveal>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
             {services.map((s, i) => (
-              <ScrollReveal key={s.name} delay={Math.min(i * 50, 300)}>
+              <ScrollReveal key={s.name} delay={Math.min(i * 70, 400)}>
                 <a
                   href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block bg-card rounded-xl border border-border p-6 card-hover group"
+                  className="service-card-premium block group cursor-pointer"
                 >
-                  <h3 className="text-base font-heading mb-1 group-hover:text-primary transition-colors">{s.name}</h3>
-                  <p className="text-muted-foreground text-sm mb-2">{s.desc}</p>
-                  <span className="text-xs font-semibold text-primary">Book This Service →</span>
+                  {/* Image */}
+                  <div className="overflow-hidden h-44">
+                    <img
+                      src={s.img}
+                      alt={s.name}
+                      loading="lazy"
+                      width={640}
+                      height={512}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </div>
+                  {/* Content */}
+                  <div className="p-6">
+                    <h3 className="text-lg font-heading mb-2 group-hover:text-primary transition-colors duration-300">{s.name}</h3>
+                    <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{s.desc}</p>
+                    <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 group-hover:gap-3">
+                      Book This Service
+                      <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    </span>
+                  </div>
                 </a>
               </ScrollReveal>
             ))}
