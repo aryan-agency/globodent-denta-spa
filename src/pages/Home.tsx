@@ -26,6 +26,8 @@ import serviceImplantDenture from "@/assets/service-implant-denture.jpg";
 import serviceFilling from "@/assets/service-filling.jpg";
 import serviceSurgery from "@/assets/service-surgery.jpg";
 import servicePostcore from "@/assets/service-postcore.jpg";
+import drAanchal from "@/assets/dr-aanchal.png";
+import drRohit from "@/assets/dr-rohit.png";
 
 /* ── Data ── */
 const whyChoose = [
@@ -67,6 +69,7 @@ const doctors = [
     education: "Dr. Harvansh Singh Judge Institute (Punjab University)",
     experience: ["Safdarjung Hospital, New Delhi", "Lady Hardinge Medical College, New Delhi"],
     focus: "Advanced dental rehabilitation using cutting-edge modern technology for complete smile transformations.",
+    img: drAanchal, badge: "10+ Years Experience",
   },
   {
     name: "Dr. Rohit Bansal", title: "B.D.S, M.D.S", role: "Endodontist (Root Canal Specialist)",
@@ -74,6 +77,7 @@ const doctors = [
     education: "Manipal University & PDM Dental College",
     experience: ["Former Assistant Professor at ITS Dental College", "National dental conferences (IACDE)"],
     focus: "Expert in painless root canal treatments, cosmetic and restorative dentistry with meticulous precision.",
+    img: drRohit, badge: "Advanced Dental Specialist",
   },
 ];
 
@@ -206,48 +210,76 @@ const Home = () => {
       </section>
 
       {/* ══ DOCTORS ══ */}
-      <section id="doctors" className="section-padding bg-card">
+      <section id="doctors" className="section-padding bg-card relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-72 h-72 rounded-full opacity-10 blur-3xl pointer-events-none" style={{ background: 'radial-gradient(circle, hsl(var(--primary) / 0.4), transparent)' }} />
         <div className="container mx-auto">
           <ScrollReveal>
-            <div className="text-center mb-12">
-              <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-2">Our Specialists</p>
-              <h2 className="text-3xl md:text-4xl font-heading">Meet Your Doctors</h2>
+            <div className="text-center mb-16">
+              <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-3">Our Specialists</p>
+              <h2 className="text-3xl md:text-5xl font-heading">Meet Your Doctors</h2>
             </div>
           </ScrollReveal>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {doctors.map((doc, i) => (
-              <ScrollReveal key={doc.name} delay={i * 150}>
-                <div className="bg-background rounded-2xl border border-border p-8 md:p-10 card-hover">
-                  <h3 className="text-2xl font-heading mb-1">{doc.name}</h3>
-                  <p className="text-muted-foreground text-sm mb-1">{doc.title}</p>
-                  <p className="text-primary font-semibold mb-4">{doc.role}</p>
-                  <div className="mb-4">
-                    <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Specializations</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {doc.specialties.map((s) => (
-                        <span key={s} className="bg-spa-blue-light text-primary text-xs font-medium px-3 py-1 rounded-full">{s}</span>
-                      ))}
+
+          <div className="space-y-16 max-w-6xl mx-auto">
+            {doctors.map((doc, i) => {
+              const imgFirst = i % 2 === 0;
+              return (
+                <ScrollReveal key={doc.name} delay={i * 150}>
+                  <div className={`flex flex-col ${imgFirst ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center`}>
+                    {/* Image */}
+                    <div className="w-full md:w-5/12 shrink-0">
+                      <div className="relative group">
+                        <div className="absolute -inset-1 rounded-2xl opacity-40 group-hover:opacity-70 blur-md transition-opacity duration-500" style={{ background: 'linear-gradient(135deg, hsl(var(--primary) / 0.3), hsl(190 80% 55% / 0.2))' }} />
+                        <img
+                          src={doc.img}
+                          alt={doc.name}
+                          loading="lazy"
+                          className="relative w-full aspect-[4/3] object-cover object-top rounded-2xl shadow-lg transition-transform duration-500 group-hover:scale-[1.03]"
+                        />
+                        <div className="absolute bottom-4 left-4 bg-primary/90 backdrop-blur-sm text-primary-foreground text-xs font-semibold px-4 py-1.5 rounded-full">
+                          {doc.badge}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="w-full md:w-7/12">
+                      <h3 className="text-2xl md:text-3xl font-heading mb-1">{doc.name}</h3>
+                      <p className="text-muted-foreground text-sm mb-1">{doc.title}</p>
+                      <p className="text-primary font-semibold text-lg mb-5">{doc.role}</p>
+
+                      <div className="mb-5">
+                        <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Specializations</h4>
+                        <div className="flex flex-wrap gap-2">
+                          {doc.specialties.map((s) => (
+                            <span key={s} className="bg-spa-blue-light text-primary text-xs font-medium px-3 py-1.5 rounded-full">{s}</span>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="mb-5">
+                        <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Education</h4>
+                        <p className="text-sm">{doc.education}</p>
+                      </div>
+
+                      <div className="mb-5">
+                        <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Experience</h4>
+                        <ul className="text-sm space-y-1">
+                          {doc.experience.map((e) => (
+                            <li key={e} className="flex items-start gap-2">
+                              <span className="h-1.5 w-1.5 bg-gold rounded-full mt-2 shrink-0" />
+                              {e}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <p className="text-muted-foreground text-sm italic">{doc.focus}</p>
                     </div>
                   </div>
-                  <div className="mb-4">
-                    <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Education</h4>
-                    <p className="text-sm">{doc.education}</p>
-                  </div>
-                  <div className="mb-4">
-                    <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Experience</h4>
-                    <ul className="text-sm space-y-1">
-                      {doc.experience.map((e) => (
-                        <li key={e} className="flex items-start gap-2">
-                          <span className="h-1.5 w-1.5 bg-gold rounded-full mt-2 shrink-0" />
-                          {e}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <p className="text-muted-foreground text-sm italic">{doc.focus}</p>
-                </div>
-              </ScrollReveal>
-            ))}
+                </ScrollReveal>
+              );
+            })}
           </div>
         </div>
       </section>
