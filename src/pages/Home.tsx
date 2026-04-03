@@ -1,9 +1,31 @@
-import { Shield, Zap, Users, IndianRupee, Heart, Star, ChevronLeft, ChevronRight, MapPin, Phone, Clock } from "lucide-react";
+import { Shield, Zap, Users, IndianRupee, Heart, Star, ChevronLeft, ChevronRight, MapPin, Phone, Clock, ArrowRight } from "lucide-react";
 import { useState, useEffect, useCallback, useRef } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 import { WHATSAPP_LINK, PHONE_LINK, CLINIC_ADDRESS, PHONE_NUMBER, CLINIC_HOURS, GOOGLE_MAPS_LINK } from "@/lib/constants";
 import ClinicSlider from "@/components/ClinicSlider";
 import ScrollReveal from "@/components/ScrollReveal";
+
+import serviceImplants from "@/assets/service-implants.jpg";
+import serviceAligners from "@/assets/service-aligners.jpg";
+import serviceFullmouth from "@/assets/service-fullmouth.jpg";
+import serviceRct from "@/assets/service-rct.jpg";
+import serviceCosmetic from "@/assets/service-cosmetic.jpg";
+import serviceWhitening from "@/assets/service-whitening.jpg";
+import serviceCrown from "@/assets/service-crown.jpg";
+import serviceSmile from "@/assets/service-smile.jpg";
+import serviceMetalbraces from "@/assets/service-metalbraces.jpg";
+import serviceCeramic from "@/assets/service-ceramic.jpg";
+import serviceExtraction from "@/assets/service-extraction.jpg";
+import serviceVeneers from "@/assets/service-veneers.jpg";
+import serviceDentures from "@/assets/service-dentures.jpg";
+import serviceCleaning from "@/assets/service-cleaning.jpg";
+import serviceXray from "@/assets/service-xray.jpg";
+import serviceGum from "@/assets/service-gum.jpg";
+import servicePerio from "@/assets/service-perio.jpg";
+import serviceImplantDenture from "@/assets/service-implant-denture.jpg";
+import serviceFilling from "@/assets/service-filling.jpg";
+import serviceSurgery from "@/assets/service-surgery.jpg";
+import servicePostcore from "@/assets/service-postcore.jpg";
 
 /* ── Data ── */
 const whyChoose = [
@@ -15,27 +37,27 @@ const whyChoose = [
 ];
 
 const services = [
-  { name: "Dental Implants", desc: "Permanent tooth replacement with titanium implants.", keyword: "affordable dental implants in Malviya Nagar" },
-  { name: "Invisible Braces / Aligners", desc: "Straighten teeth discreetly with clear aligners.", keyword: "invisible braces dentist South Delhi" },
-  { name: "Full Mouth Rehabilitation", desc: "Complete restoration for severely damaged teeth.", keyword: "full mouth rehab clinic Malviya Nagar" },
-  { name: "Single Sitting RCT", desc: "Complete root canal in one painless visit.", keyword: "painless root canal treatment Delhi" },
-  { name: "Cosmetic Dentistry", desc: "Veneers, bonding, and aesthetic procedures.", keyword: "cosmetic dentist South Delhi" },
-  { name: "Teeth Whitening", desc: "Professional whitening for a brighter smile.", keyword: "teeth whitening Malviya Nagar" },
-  { name: "Crown & Bridges", desc: "Custom crowns and bridges for damaged teeth.", keyword: "dental crown bridge Delhi" },
-  { name: "Smile Designing", desc: "Complete smile makeover for your dream smile.", keyword: "smile design makeover South Delhi" },
-  { name: "Metal Braces", desc: "Traditional braces for effective teeth alignment.", keyword: "metal braces treatment Delhi" },
-  { name: "Ceramic Braces", desc: "Tooth-colored brackets for a subtler look.", keyword: "ceramic braces dentist near me" },
-  { name: "Painless Extractions", desc: "Gentle, pain-free tooth removal.", keyword: "painless tooth extraction Delhi" },
-  { name: "Veneers & Laminates", desc: "Ultra-thin shells for a flawless smile.", keyword: "dental veneers South Delhi" },
-  { name: "Complete Dentures", desc: "Comfortable dentures for a natural-looking smile.", keyword: "dentures clinic near me Malviya Nagar" },
-  { name: "Teeth Cleaning & Polishing", desc: "Professional scaling to remove plaque & tartar.", keyword: "dental cleaning polishing Delhi" },
-  { name: "Digital X-Ray", desc: "Low-radiation imaging for accurate diagnosis.", keyword: "digital dental x-ray Delhi" },
-  { name: "Gum Depigmentation", desc: "Remove dark spots for uniform pink gums.", keyword: "gum depigmentation treatment Delhi" },
-  { name: "Periodontal Surgery", desc: "Advanced gum disease treatment.", keyword: "periodontal gum surgery Malviya Nagar" },
-  { name: "Implant Supported Dentures", desc: "Implant-secured dentures for maximum stability.", keyword: "implant supported dentures Malviya Nagar" },
-  { name: "Tooth-Colored Fillings", desc: "Mercury-free fillings matching natural tooth color.", keyword: "tooth colored fillings South Delhi" },
-  { name: "Surgical Procedures", desc: "Oral surgery for impacted teeth and complex cases.", keyword: "dental surgery clinic Malviya Nagar" },
-  { name: "Post and Core", desc: "Foundation restoration before crown placement.", keyword: "post and core dental treatment Delhi" },
+  { name: "Dental Implants", desc: "Permanent tooth replacement with titanium implants.", keyword: "affordable dental implants in Malviya Nagar", img: serviceImplants },
+  { name: "Invisible Braces / Aligners", desc: "Straighten teeth discreetly with clear aligners.", keyword: "invisible braces dentist South Delhi", img: serviceAligners },
+  { name: "Full Mouth Rehabilitation", desc: "Complete restoration for severely damaged teeth.", keyword: "full mouth rehab clinic Malviya Nagar", img: serviceFullmouth },
+  { name: "Single Sitting RCT", desc: "Complete root canal in one painless visit.", keyword: "painless root canal treatment Delhi", img: serviceRct },
+  { name: "Cosmetic Dentistry", desc: "Veneers, bonding, and aesthetic procedures.", keyword: "cosmetic dentist South Delhi", img: serviceCosmetic },
+  { name: "Teeth Whitening", desc: "Professional whitening for a brighter smile.", keyword: "teeth whitening Malviya Nagar", img: serviceWhitening },
+  { name: "Crown & Bridges", desc: "Custom crowns and bridges for damaged teeth.", keyword: "dental crown bridge Delhi", img: serviceCrown },
+  { name: "Smile Designing", desc: "Complete smile makeover for your dream smile.", keyword: "smile design makeover South Delhi", img: serviceSmile },
+  { name: "Metal Braces", desc: "Traditional braces for effective teeth alignment.", keyword: "metal braces treatment Delhi", img: serviceMetalbraces },
+  { name: "Ceramic Braces", desc: "Tooth-colored brackets for a subtler look.", keyword: "ceramic braces dentist near me", img: serviceCeramic },
+  { name: "Painless Extractions", desc: "Gentle, pain-free tooth removal.", keyword: "painless tooth extraction Delhi", img: serviceExtraction },
+  { name: "Veneers & Laminates", desc: "Ultra-thin shells for a flawless smile.", keyword: "dental veneers South Delhi", img: serviceVeneers },
+  { name: "Complete Dentures", desc: "Comfortable dentures for a natural-looking smile.", keyword: "dentures clinic near me Malviya Nagar", img: serviceDentures },
+  { name: "Teeth Cleaning & Polishing", desc: "Professional scaling to remove plaque & tartar.", keyword: "dental cleaning polishing Delhi", img: serviceCleaning },
+  { name: "Digital X-Ray", desc: "Low-radiation imaging for accurate diagnosis.", keyword: "digital dental x-ray Delhi", img: serviceXray },
+  { name: "Gum Depigmentation", desc: "Remove dark spots for uniform pink gums.", keyword: "gum depigmentation treatment Delhi", img: serviceGum },
+  { name: "Periodontal Surgery", desc: "Advanced gum disease treatment.", keyword: "periodontal gum surgery Malviya Nagar", img: servicePerio },
+  { name: "Implant Supported Dentures", desc: "Implant-secured dentures for maximum stability.", keyword: "implant supported dentures Malviya Nagar", img: serviceImplantDenture },
+  { name: "Tooth-Colored Fillings", desc: "Mercury-free fillings matching natural tooth color.", keyword: "tooth colored fillings South Delhi", img: serviceFilling },
+  { name: "Surgical Procedures", desc: "Oral surgery for impacted teeth and complex cases.", keyword: "dental surgery clinic Malviya Nagar", img: serviceSurgery },
+  { name: "Post and Core", desc: "Foundation restoration before crown placement.", keyword: "post and core dental treatment Delhi", img: servicePostcore },
 ];
 
 const doctors = [
@@ -134,27 +156,48 @@ const Home = () => {
       </section>
 
       {/* ══ SERVICES ══ */}
-      <section id="services" className="section-padding">
-        <div className="container mx-auto">
+      <section id="services" className="section-padding relative overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--spa-blue-light)) 50%, hsl(var(--background)) 100%)' }}>
+        {/* Ambient glow orbs */}
+        <div className="absolute top-20 left-1/4 w-96 h-96 rounded-full opacity-20 blur-3xl pointer-events-none" style={{ background: 'radial-gradient(circle, hsl(var(--primary) / 0.3), transparent)' }} />
+        <div className="absolute bottom-20 right-1/4 w-80 h-80 rounded-full opacity-15 blur-3xl pointer-events-none" style={{ background: 'radial-gradient(circle, hsl(190 80% 55% / 0.25), transparent)' }} />
+
+        <div className="container mx-auto relative z-10">
           <ScrollReveal>
-            <div className="text-center mb-12">
-              <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-2">Our Services</p>
-              <h2 className="text-3xl md:text-4xl font-heading mb-4">Comprehensive Dental Care</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-sm">From routine cleanings to advanced implantology — affordable, pain-free dental care at the best clinic in Malviya Nagar.</p>
+            <div className="text-center mb-16">
+              <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-3">Our Services</p>
+              <h2 className="text-3xl md:text-5xl font-heading mb-5">Comprehensive Dental Care</h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">From routine cleanings to advanced implantology — affordable, pain-free dental care at the best clinic in Malviya Nagar.</p>
             </div>
           </ScrollReveal>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
             {services.map((s, i) => (
-              <ScrollReveal key={s.name} delay={Math.min(i * 50, 300)}>
+              <ScrollReveal key={s.name} delay={Math.min(i * 70, 400)}>
                 <a
                   href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block bg-card rounded-xl border border-border p-6 card-hover group"
+                  className="service-card-premium block group cursor-pointer"
                 >
-                  <h3 className="text-base font-heading mb-1 group-hover:text-primary transition-colors">{s.name}</h3>
-                  <p className="text-muted-foreground text-sm mb-2">{s.desc}</p>
-                  <span className="text-xs font-semibold text-primary">Book This Service →</span>
+                  {/* Image */}
+                  <div className="overflow-hidden h-44">
+                    <img
+                      src={s.img}
+                      alt={s.name}
+                      loading="lazy"
+                      width={640}
+                      height={512}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </div>
+                  {/* Content */}
+                  <div className="p-6">
+                    <h3 className="text-lg font-heading mb-2 group-hover:text-primary transition-colors duration-300">{s.name}</h3>
+                    <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{s.desc}</p>
+                    <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 group-hover:gap-3">
+                      Book This Service
+                      <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    </span>
+                  </div>
                 </a>
               </ScrollReveal>
             ))}
