@@ -203,14 +203,14 @@ const Home = () => {
                   className="service-card-premium block group cursor-pointer"
                 >
                   {/* Image */}
-                  <div className="overflow-hidden h-44">
+                  <div className="overflow-hidden h-48 bg-muted/30 flex items-center justify-center">
                     <img
                       src={s.img}
                       alt={s.name}
                       loading="lazy"
                       width={640}
                       height={512}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
                   {/* Content */}
