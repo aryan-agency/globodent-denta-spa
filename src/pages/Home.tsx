@@ -50,6 +50,7 @@ const services = [
   { name: "Single Sitting RCT", desc: "Complete root canal in one painless visit.", keyword: "painless root canal treatment Delhi", img: serviceRct },
   { name: "Painless Surgical Procedures", desc: "Oral surgery for impacted teeth and complex cases.", keyword: "dental surgery clinic Malviya Nagar", img: serviceSurgery },
   { name: "Crown & Bridges", desc: "Custom crowns and bridges for damaged teeth.", keyword: "dental crown bridge Delhi", img: serviceCrown },
+  { name: "Smile Designing", desc: "Complete smile makeover for your dream smile.", keyword: "smile design makeover South Delhi", img: serviceSmile },
   { name: "Veneers & Laminates", desc: "Ultra-thin shells for a flawless smile.", keyword: "dental veneers South Delhi", img: serviceVeneers },
   { name: "Complete Dentures", desc: "Comfortable dentures for a natural-looking smile.", keyword: "dentures clinic near me Malviya Nagar", img: serviceDentures },
   { name: "Teeth Cleaning & Polishing", desc: "Professional scaling to remove plaque & tartar.", keyword: "dental cleaning polishing Delhi", img: serviceCleaning },
@@ -58,7 +59,6 @@ const services = [
   { name: "Periodontal Surgery", desc: "Advanced gum disease treatment.", keyword: "periodontal gum surgery Malviya Nagar", img: servicePerio },
   { name: "Implant Supported Dentures", desc: "Implant-secured dentures for maximum stability.", keyword: "implant supported dentures Malviya Nagar", img: serviceImplantDenture },
   { name: "Tooth-Colored Fillings", desc: "Mercury-free fillings matching natural tooth color.", keyword: "tooth colored fillings South Delhi", img: serviceFilling },
-  { name: "Surgical Procedures", desc: "Oral surgery for impacted teeth and complex cases.", keyword: "dental surgery clinic Malviya Nagar", img: serviceSurgery },
   { name: "Post and Core", desc: "Foundation restoration before crown placement.", keyword: "post and core dental treatment Delhi", img: servicePostcore },
 ];
 
