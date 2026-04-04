@@ -1,6 +1,7 @@
 import { Shield, Zap, Users, IndianRupee, Heart, Star, ChevronLeft, ChevronRight, MapPin, Phone, Clock, ArrowRight, Plus, Minus } from "lucide-react";
 import { useState, useEffect, useCallback, useRef } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
+import logo from "@/assets/logo.png";
 import { WHATSAPP_LINK, PHONE_LINK, CLINIC_ADDRESS, PHONE_NUMBER, CLINIC_HOURS, GOOGLE_MAPS_LINK } from "@/lib/constants";
 import ClinicSlider from "@/components/ClinicSlider";
 import ScrollReveal from "@/components/ScrollReveal";
