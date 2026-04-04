@@ -142,15 +142,23 @@ const Home = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/60 to-foreground/30" />
         </div>
         <div className="relative container mx-auto px-4 py-32">
-          <div className="max-w-2xl">
-            <p className="text-gold font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up">Globodent Dental Spa</p>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading leading-tight mb-6 text-primary-foreground animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+          <div className="max-w-2xl flex flex-col items-center md:items-start w-full">
+            {/* Hero Logo */}
+            <div className="mb-8 animate-fade-in-up hero-logo-glow">
+              <img
+                src={logo}
+                alt="Globodent Dental Spa"
+                className="h-28 md:h-40 lg:h-44 w-auto animate-float drop-shadow-2xl"
+              />
+            </div>
+            <p className="text-gold font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>Globodent Dental Spa</p>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading leading-tight mb-6 text-primary-foreground animate-fade-in-up text-center md:text-left" style={{ animationDelay: "0.25s" }}>
               Best Dental Clinic in Malviya Nagar for Pain-Free Advanced Treatments
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-primary-foreground/80 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            <p className="text-lg md:text-xl mb-8 text-primary-foreground/80 animate-fade-in-up text-center md:text-left" style={{ animationDelay: "0.35s" }}>
               Affordable, Advanced & Trusted Dental Care in South Delhi
             </p>
-            <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <div className="flex flex-wrap gap-4 animate-fade-in-up justify-center md:justify-start" style={{ animationDelay: "0.45s" }}>
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn-glow bg-primary text-primary-foreground px-8 py-3.5 rounded-lg font-semibold text-base">
                 Book Consultation
               </a>
