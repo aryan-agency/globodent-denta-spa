@@ -5,17 +5,17 @@ import { WHATSAPP_LINK, PHONE_LINK, CLINIC_ADDRESS, PHONE_NUMBER, CLINIC_HOURS, 
 import ClinicSlider from "@/components/ClinicSlider";
 import ScrollReveal from "@/components/ScrollReveal";
 
-import serviceImplants from "@/assets/service-implants.jpg";
-import serviceAligners from "@/assets/service-aligners.jpg";
-import serviceFullmouth from "@/assets/service-fullmouth.jpg";
-import serviceRct from "@/assets/service-rct.jpg";
-import serviceCosmetic from "@/assets/service-cosmetic.jpg";
-import serviceWhitening from "@/assets/service-whitening.jpg";
+import serviceImplants from "@/assets/service-implants-real.jpg";
+import serviceAligners from "@/assets/service-aligners-real.jpg";
+import serviceFullmouth from "@/assets/service-fullmouth-real.jpg";
+import serviceRct from "@/assets/service-rct-real.png";
+import serviceCosmetic from "@/assets/service-cosmetic-real.jpg";
+import serviceWhitening from "@/assets/service-whitening-real.jpg";
 import serviceCrown from "@/assets/service-crown.jpg";
 import serviceSmile from "@/assets/service-smile.jpg";
-import serviceMetalbraces from "@/assets/service-metalbraces.jpg";
-import serviceCeramic from "@/assets/service-ceramic.jpg";
-import serviceExtraction from "@/assets/service-extraction.jpg";
+import serviceMetalbraces from "@/assets/service-metalbraces-real.jpg";
+import serviceCeramic from "@/assets/service-ceramic-real.jpg";
+import serviceExtraction from "@/assets/service-extraction-real.jpg";
 import serviceVeneers from "@/assets/service-veneers.jpg";
 import serviceDentures from "@/assets/service-dentures.jpg";
 import serviceCleaning from "@/assets/service-cleaning.jpg";
@@ -24,7 +24,7 @@ import serviceGum from "@/assets/service-gum.jpg";
 import servicePerio from "@/assets/service-perio.jpg";
 import serviceImplantDenture from "@/assets/service-implant-denture.jpg";
 import serviceFilling from "@/assets/service-filling.jpg";
-import serviceSurgery from "@/assets/service-surgery.jpg";
+import serviceSurgery from "@/assets/service-surgery-real.jpg";
 import servicePostcore from "@/assets/service-postcore.jpg";
 import drAanchal from "@/assets/dr-aanchal.png";
 import drRohit from "@/assets/dr-rohit.png";
@@ -42,14 +42,15 @@ const services = [
   { name: "Dental Implants", desc: "Permanent tooth replacement with titanium implants.", keyword: "affordable dental implants in Malviya Nagar", img: serviceImplants },
   { name: "Invisible Braces / Aligners", desc: "Straighten teeth discreetly with clear aligners.", keyword: "invisible braces dentist South Delhi", img: serviceAligners },
   { name: "Full Mouth Rehabilitation", desc: "Complete restoration for severely damaged teeth.", keyword: "full mouth rehab clinic Malviya Nagar", img: serviceFullmouth },
-  { name: "Single Sitting RCT", desc: "Complete root canal in one painless visit.", keyword: "painless root canal treatment Delhi", img: serviceRct },
-  { name: "Cosmetic Dentistry", desc: "Veneers, bonding, and aesthetic procedures.", keyword: "cosmetic dentist South Delhi", img: serviceCosmetic },
-  { name: "Teeth Whitening", desc: "Professional whitening for a brighter smile.", keyword: "teeth whitening Malviya Nagar", img: serviceWhitening },
-  { name: "Crown & Bridges", desc: "Custom crowns and bridges for damaged teeth.", keyword: "dental crown bridge Delhi", img: serviceCrown },
-  { name: "Smile Designing", desc: "Complete smile makeover for your dream smile.", keyword: "smile design makeover South Delhi", img: serviceSmile },
   { name: "Metal Braces", desc: "Traditional braces for effective teeth alignment.", keyword: "metal braces treatment Delhi", img: serviceMetalbraces },
   { name: "Ceramic Braces", desc: "Tooth-colored brackets for a subtler look.", keyword: "ceramic braces dentist near me", img: serviceCeramic },
+  { name: "Cosmetic Dentistry", desc: "Veneers, bonding, and aesthetic procedures.", keyword: "cosmetic dentist South Delhi", img: serviceCosmetic },
+  { name: "Teeth Whitening", desc: "Professional whitening for a brighter smile.", keyword: "teeth whitening Malviya Nagar", img: serviceWhitening },
   { name: "Painless Extractions", desc: "Gentle, pain-free tooth removal.", keyword: "painless tooth extraction Delhi", img: serviceExtraction },
+  { name: "Single Sitting RCT", desc: "Complete root canal in one painless visit.", keyword: "painless root canal treatment Delhi", img: serviceRct },
+  { name: "Painless Surgical Procedures", desc: "Oral surgery for impacted teeth and complex cases.", keyword: "dental surgery clinic Malviya Nagar", img: serviceSurgery },
+  { name: "Crown & Bridges", desc: "Custom crowns and bridges for damaged teeth.", keyword: "dental crown bridge Delhi", img: serviceCrown },
+  { name: "Smile Designing", desc: "Complete smile makeover for your dream smile.", keyword: "smile design makeover South Delhi", img: serviceSmile },
   { name: "Veneers & Laminates", desc: "Ultra-thin shells for a flawless smile.", keyword: "dental veneers South Delhi", img: serviceVeneers },
   { name: "Complete Dentures", desc: "Comfortable dentures for a natural-looking smile.", keyword: "dentures clinic near me Malviya Nagar", img: serviceDentures },
   { name: "Teeth Cleaning & Polishing", desc: "Professional scaling to remove plaque & tartar.", keyword: "dental cleaning polishing Delhi", img: serviceCleaning },
@@ -58,7 +59,6 @@ const services = [
   { name: "Periodontal Surgery", desc: "Advanced gum disease treatment.", keyword: "periodontal gum surgery Malviya Nagar", img: servicePerio },
   { name: "Implant Supported Dentures", desc: "Implant-secured dentures for maximum stability.", keyword: "implant supported dentures Malviya Nagar", img: serviceImplantDenture },
   { name: "Tooth-Colored Fillings", desc: "Mercury-free fillings matching natural tooth color.", keyword: "tooth colored fillings South Delhi", img: serviceFilling },
-  { name: "Surgical Procedures", desc: "Oral surgery for impacted teeth and complex cases.", keyword: "dental surgery clinic Malviya Nagar", img: serviceSurgery },
   { name: "Post and Core", desc: "Foundation restoration before crown placement.", keyword: "post and core dental treatment Delhi", img: servicePostcore },
 ];
 
@@ -203,14 +203,14 @@ const Home = () => {
                   className="service-card-premium block group cursor-pointer"
                 >
                   {/* Image */}
-                  <div className="overflow-hidden h-44">
+                  <div className="overflow-hidden h-48 bg-muted/30 flex items-center justify-center">
                     <img
                       src={s.img}
                       alt={s.name}
                       loading="lazy"
                       width={640}
                       height={512}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
                   {/* Content */}
