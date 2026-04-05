@@ -14,7 +14,7 @@ import serviceCosmetic from "@/assets/service-cosmetic-real.jpg";
 import serviceWhitening from "@/assets/service-whitening-real.jpg";
 import serviceCrown from "@/assets/service-crown.jpg";
 import serviceSmile from "@/assets/service-smile.jpg";
-import serviceMetalbraces from "@/assets/service-metalbraces-real.jpg";
+import serviceMetalbraces from "@/assets/service-metalbraces-real.png";
 import serviceCeramic from "@/assets/service-ceramic-real.jpg";
 import serviceExtraction from "@/assets/service-extraction-real.jpg";
 import serviceVeneers from "@/assets/service-veneers.jpg";
