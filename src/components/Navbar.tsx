@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-new.png";
 import { WHATSAPP_LINK, PHONE_LINK } from "@/lib/constants";
 import useScrollSpy from "@/hooks/useScrollSpy";
 
@@ -46,6 +46,7 @@ const Navbar = () => {
             src={logo}
             alt="Globodent Dental Spa"
             className={`w-auto transition-all duration-500 ${scrolled ? "h-10" : "h-12 md:h-14"}`}
+            style={{ filter: 'drop-shadow(0 0 8px hsl(209 65% 48% / 0.3))' }}
           />
         </button>
 
