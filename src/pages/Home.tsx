@@ -144,11 +144,12 @@ const Home = () => {
         <div className="relative container mx-auto px-4 py-32">
           <div className="max-w-2xl flex flex-col items-center md:items-start w-full">
             {/* Hero Logo */}
-            <div className="mb-8 animate-fade-in-up hero-logo-glow">
+            <div className="mb-8 hero-logo-glow" style={{ animation: 'fade-in-up 0.8s ease-out forwards, float 3s ease-in-out 0.8s infinite' }}>
               <img
                 src={logo}
                 alt="Globodent Dental Spa"
-                className="h-28 md:h-40 lg:h-44 w-auto animate-float drop-shadow-2xl"
+                className="h-32 md:h-44 lg:h-48 w-auto drop-shadow-2xl"
+                style={{ filter: 'drop-shadow(0 0 30px hsl(209 65% 48% / 0.5)) drop-shadow(0 8px 24px hsl(0 0% 0% / 0.35))' }}
               />
             </div>
             <p className="text-gold font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>Globodent Dental Spa</p>
