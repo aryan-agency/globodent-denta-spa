@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-new.png";
 import { WHATSAPP_LINK, PHONE_LINK } from "@/lib/constants";
 import useScrollSpy from "@/hooks/useScrollSpy";
 
