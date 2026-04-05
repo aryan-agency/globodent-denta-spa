@@ -26,7 +26,7 @@ import servicePerio from "@/assets/service-perio.jpg";
 import serviceImplantDenture from "@/assets/service-implant-denture.jpg";
 import serviceFilling from "@/assets/service-filling.jpg";
 import serviceSurgery from "@/assets/service-surgery-real.jpg";
-import servicePostcore from "@/assets/service-postcore.jpg";
+import servicePostcore from "@/assets/service-postcore-real.jpg";
 import drAanchal from "@/assets/dr-aanchal.png";
 import drRohit from "@/assets/dr-rohit.png";
 
