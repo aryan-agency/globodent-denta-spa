@@ -11,7 +11,7 @@ import serviceAligners from "@/assets/service-aligners-real.jpg";
 import serviceFullmouth from "@/assets/service-fullmouth-real.jpg";
 import serviceRct from "@/assets/service-rct-real.png";
 import serviceCosmetic from "@/assets/service-cosmetic-real.jpg";
-import serviceWhitening from "@/assets/service-whitening-real.jpg";
+import serviceWhitening from "@/assets/service-whitening-new.jpg";
 import serviceCrown from "@/assets/service-crown.jpg";
 import serviceSmile from "@/assets/service-smile-real.jpg";
 import serviceMetalbraces from "@/assets/service-metalbraces-real.png";
