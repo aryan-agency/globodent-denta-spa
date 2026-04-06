@@ -144,15 +144,16 @@ const Home = () => {
         <div className="relative container mx-auto px-4 py-32">
           <div className="max-w-2xl flex flex-col items-center md:items-start w-full">
             {/* Hero Logo */}
-            <div className="mb-8" style={{ animation: 'fade-in-up 0.8s ease-out forwards, float 4s ease-in-out 0.8s infinite' }}>
+            <div className="mb-8 relative" style={{ animation: 'fade-in-up 0.8s ease-out forwards, float 4s ease-in-out 0.8s infinite' }}>
               <img
                 src={logo}
-                alt="Globodent Dental Spa"
+                alt="Globodent® Dental Spa"
                 className="h-36 md:h-44 lg:h-52 w-auto"
                 style={{
                   filter: 'drop-shadow(0 0 25px hsl(209 65% 48% / 0.4)) drop-shadow(0 0 50px hsl(209 65% 48% / 0.15)) drop-shadow(0 12px 20px hsl(0 0% 0% / 0.3))',
                 }}
               />
+              <span className="absolute -top-1 -right-3 md:-right-4 text-primary-foreground/80 font-semibold text-xs md:text-sm" style={{ textShadow: '0 0 8px hsl(209 65% 48% / 0.5)' }}>®</span>
             </div>
             <p className="text-gold font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>Globodent<sup className="text-[0.6em] align-super">®</sup> Dental Spa</p>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading leading-tight mb-6 text-primary-foreground animate-fade-in-up text-center md:text-left" style={{ animationDelay: "0.25s" }}>
