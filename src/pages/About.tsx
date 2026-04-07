@@ -34,7 +34,7 @@ const About = () => (
         <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-2">About Us</p>
         <h1 className="text-3xl md:text-5xl font-heading mb-6">Our Dental Specialists</h1>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          At Globodent<sup className="text-[0.6em]">®</sup> Dental Spa, our experienced team of specialists combines advanced technology
+          At Globodent Dental Spa<sup className="text-[0.6em]">®</sup>, our experienced team of specialists combines advanced technology
           with compassionate care to deliver the best dental treatments in South Delhi.
         </p>
       </div>

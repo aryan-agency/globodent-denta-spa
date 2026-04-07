@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 pt-6 border-t border-primary-foreground/10 text-center text-xs">
-          <p>© {new Date().getFullYear()} Globodent<sup className="text-[0.6em]">®</sup> Dental Spa. All rights reserved. | Best Dental Clinic in Malviya Nagar, New Delhi</p>
+          <p>© {new Date().getFullYear()} <p>© {new Date().getFullYear()} Globodent Dental Spa<sup className="text-[0.6em]">®</sup>. All rights reserved. | Best Dental Clinic in Malviya Nagar, New Delhi</p> All rights reserved. | Best Dental Clinic in Malviya Nagar, New Delhi</p>
         </div>
       </div>
     </footer>
