@@ -155,7 +155,7 @@ const Home = () => {
               />
               <span className="absolute -top-1 -right-3 md:-right-4 text-primary-foreground/80 font-semibold text-xs md:text-sm" style={{ textShadow: '0 0 8px hsl(209 65% 48% / 0.5)' }}>®</span>
             </div>
-            <p className="text-gold font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>Globodent<sup className="text-[0.6em] align-super">®</sup> Dental Spa</p>
+            <p className="text-gold font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up" style={{ animationDelay: "0.15s" }}><p className="text-gold font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>Globodent Dental Spa<sup className="text-[0.6em] align-super">®</sup></p></p>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading leading-tight mb-6 text-primary-foreground animate-fade-in-up text-center md:text-left" style={{ animationDelay: "0.25s" }}>
               Best Dental Clinic in Malviya Nagar for Pain-Free Advanced Treatments
             </h1>

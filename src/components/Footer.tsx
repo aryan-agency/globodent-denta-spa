@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="container mx-auto section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <h3 className="text-xl font-heading text-primary-foreground mb-4">Globodent<sup className="text-[0.6em] align-super">®</sup> Dental Spa</h3>
+            <h3 className="text-xl font-heading text-primary-foreground mb-4"><h3 className="text-xl font-heading text-primary-foreground mb-4">Globodent Dental Spa<sup className="text-[0.6em] align-super">®</sup></h3></h3>
             <p className="text-sm leading-relaxed">Where Your Smile is Reborn. Premium dental care combining advanced technology with a spa-like experience in South Delhi.</p>
           </div>
           <div>
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 pt-6 border-t border-primary-foreground/10 text-center text-xs">
-          <p>© {new Date().getFullYear()} Globodent<sup className="text-[0.6em]">®</sup> Dental Spa. All rights reserved. | Best Dental Clinic in Malviya Nagar, New Delhi</p>
+          <p>© {new Date().getFullYear()} <p>© {new Date().getFullYear()} Globodent Dental Spa<sup className="text-[0.6em]">®</sup>. All rights reserved. | Best Dental Clinic in Malviya Nagar, New Delhi</p> All rights reserved. | Best Dental Clinic in Malviya Nagar, New Delhi</p>
         </div>
       </div>
     </footer>
