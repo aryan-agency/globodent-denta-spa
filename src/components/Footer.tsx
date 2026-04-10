@@ -1,17 +1,33 @@
 import { MapPin, Phone, Clock } from "lucide-react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { CLINIC_ADDRESS, PHONE_NUMBER, PHONE_LINK, CLINIC_HOURS, WHATSAPP_LINK } from "@/lib/constants";
 
-const sectionLinks = [
-  { label: "Home", id: "hero" },
-  { label: "Services", id: "services" },
-  { label: "Doctors", id: "doctors" },
-  { label: "Gallery", id: "gallery" },
-  { label: "Contact", id: "contact" },
+const footerLinks = [
+  { label: "Home", path: "/", id: "hero" },
+  { label: "Services", path: "/services", id: "services" },
+  { label: "Doctors", path: "/doctors", id: "doctors" },
+  { label: "Gallery", path: "/#gallery", id: "gallery" },
+  { label: "Contact", path: "/contact", id: "contact" },
 ];
 
 const Footer = () => {
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
+
+  const handleNav = (link: typeof footerLinks[0]) => {
+    if (isHome && document.getElementById(link.id)) {
+      document.getElementById(link.id)?.scrollIntoView({ behavior: "smooth" });
+      return;
+    }
+    if (link.path.startsWith("/#")) {
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById(link.id)?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+      return;
+    }
+    navigate(link.path);
   };
 
   return (
@@ -19,14 +35,14 @@ const Footer = () => {
       <div className="container mx-auto section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <h3 className="text-xl font-heading text-primary-foreground mb-4"><h3 className="text-xl font-heading text-primary-foreground mb-4">Globodent Dental Spa<sup className="text-[0.6em] align-super">®</sup></h3></h3>
+            <h3 className="text-xl font-heading text-primary-foreground mb-4">Globodent Dental Spa<sup className="text-[0.6em] align-super">®</sup></h3>
             <p className="text-sm leading-relaxed">Where Your Smile is Reborn. Premium dental care combining advanced technology with a spa-like experience in South Delhi.</p>
           </div>
           <div>
             <h4 className="font-semibold text-primary-foreground mb-4">Quick Links</h4>
             <nav className="flex flex-col gap-2 text-sm">
-              {sectionLinks.map((l) => (
-                <button key={l.id} onClick={() => scrollTo(l.id)} className="text-left hover:text-primary-foreground transition-colors">
+              {footerLinks.map((l) => (
+                <button key={l.path} onClick={() => handleNav(l)} className="text-left hover:text-primary-foreground transition-colors">
                   {l.label}
                 </button>
               ))}
@@ -54,7 +70,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 pt-6 border-t border-primary-foreground/10 text-center text-xs">
-          <p>© {new Date().getFullYear()} <p>© {new Date().getFullYear()} Globodent Dental Spa<sup className="text-[0.6em]">®</sup>. All rights reserved. | Best Dental Clinic in Malviya Nagar, New Delhi</p> All rights reserved. | Best Dental Clinic in Malviya Nagar, New Delhi</p>
+          <p>© {new Date().getFullYear()} Globodent Dental Spa<sup className="text-[0.6em]">®</sup>. All rights reserved. | Best Dental Clinic in Malviya Nagar, New Delhi</p>
         </div>
       </div>
     </footer>
