@@ -1,23 +1,27 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "@/assets/logo-new.png";
 import { WHATSAPP_LINK, PHONE_LINK } from "@/lib/constants";
 import useScrollSpy from "@/hooks/useScrollSpy";
 
 const navLinks = [
-  { label: "Home", id: "hero" },
-  { label: "Services", id: "services" },
-  { label: "Doctors", id: "doctors" },
-  { label: "Gallery", id: "gallery" },
-  { label: "Reviews", id: "testimonials" },
-  { label: "Contact", id: "contact" },
+  { label: "Home", id: "hero", path: "/" },
+  { label: "Services", id: "services", path: "/services" },
+  { label: "Doctors", id: "doctors", path: "/doctors" },
+  { label: "Gallery", id: "gallery", path: "/#gallery" },
+  { label: "Reviews", id: "testimonials", path: "/#testimonials" },
+  { label: "Contact", id: "contact", path: "/contact" },
 ];
 
-const sectionIds = navLinks.map((l) => l.id);
+const sectionIds = ["hero", "services", "doctors", "gallery", "testimonials", "contact"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
   const activeId = useScrollSpy(sectionIds, 120);
 
   useEffect(() => {
@@ -26,10 +30,42 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollTo = (id: string) => {
+  const handleNav = (link: typeof navLinks[0]) => {
     setIsOpen(false);
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+
+    // If on homepage, scroll to section
+    if (isHome) {
+      const el = document.getElementById(link.id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        return;
+      }
+    }
+
+    // Pages with dedicated routes
+    if (["/services", "/doctors", "/contact"].includes(link.path)) {
+      navigate(link.path);
+      return;
+    }
+
+    // For homepage sections (gallery, testimonials), navigate to home with hash
+    if (link.path.startsWith("/#")) {
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById(link.id)?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+      return;
+    }
+
+    // Home
+    navigate("/");
+  };
+
+  const isActive = (link: typeof navLinks[0]) => {
+    if (!isHome) {
+      return location.pathname === link.path;
+    }
+    return activeId === link.id;
   };
 
   return (
@@ -41,22 +77,22 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-4">
-        <button onClick={() => scrollTo("hero")} className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <img
             src={logo}
             alt="Globodent Dental Spa"
             className={`w-auto transition-all duration-500 ${scrolled ? "h-10" : "h-12 md:h-14"}`}
             style={{ filter: 'drop-shadow(0 0 8px hsl(209 65% 48% / 0.3))' }}
           />
-        </button>
+        </Link>
 
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <button
               key={link.id}
-              onClick={() => scrollTo(link.id)}
+              onClick={() => handleNav(link)}
               className={`text-sm font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 ${
-                activeId === link.id
+                isActive(link)
                   ? "text-primary after:w-full"
                   : "text-foreground/80 hover:text-primary after:w-0 hover:after:w-full"
               }`}
@@ -102,9 +138,9 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <button
               key={link.id}
-              onClick={() => scrollTo(link.id)}
+              onClick={() => handleNav(link)}
               className={`py-2 text-base font-medium transition-colors text-left ${
-                activeId === link.id ? "text-primary" : "text-foreground/80"
+                isActive(link) ? "text-primary" : "text-foreground/80"
               }`}
             >
               {link.label}
