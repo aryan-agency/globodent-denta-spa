@@ -6,7 +6,8 @@ const footerLinks = [
   { label: "Home", path: "/", id: "hero" },
   { label: "Services", path: "/services", id: "services" },
   { label: "Doctors", path: "/doctors", id: "doctors" },
-  { label: "Gallery", path: "/#gallery", id: "gallery" },
+  { label: "Gallery", path: "/gallery", id: "gallery" },
+  { label: "Reviews", path: "/reviews", id: "testimonials" },
   { label: "Contact", path: "/contact", id: "contact" },
 ];
 

@@ -9,8 +9,8 @@ const navLinks = [
   { label: "Home", id: "hero", path: "/" },
   { label: "Services", id: "services", path: "/services" },
   { label: "Doctors", id: "doctors", path: "/doctors" },
-  { label: "Gallery", id: "gallery", path: "/#gallery" },
-  { label: "Reviews", id: "testimonials", path: "/#testimonials" },
+  { label: "Gallery", id: "gallery", path: "/gallery" },
+  { label: "Reviews", id: "testimonials", path: "/reviews" },
   { label: "Contact", id: "contact", path: "/contact" },
 ];
 
@@ -43,7 +43,7 @@ const Navbar = () => {
     }
 
     // Pages with dedicated routes
-    if (["/services", "/doctors", "/contact"].includes(link.path)) {
+    if (["/services", "/doctors", "/gallery", "/reviews", "/contact"].includes(link.path)) {
       navigate(link.path);
       return;
     }
