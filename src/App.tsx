@@ -10,6 +10,8 @@ import FloatingButtons from "@/components/FloatingButtons";
 import Home from "./pages/Home";
 import ServicesPage from "./pages/ServicesPage";
 import DoctorsPage from "./pages/DoctorsPage";
+import GalleryPage from "./pages/GalleryPage";
+import ReviewsPage from "./pages/ReviewsPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
@@ -30,6 +32,8 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/doctors" element={<DoctorsPage />} />
+              <Route path="/gallery" element={<GalleryPage />} />
+              <Route path="/reviews" element={<ReviewsPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
