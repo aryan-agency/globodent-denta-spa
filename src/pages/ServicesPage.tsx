@@ -97,14 +97,18 @@ const ServicesPage = () => (
       <section className="section-padding">
         <div className="container mx-auto">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
-            {services.map((s, i) => (
+            {services.map((s, i) => {
+              const detailSlug = serviceSlugMap[s.name];
+              const Wrapper = detailSlug
+                ? ({ children, className }: { children: React.ReactNode; className: string }) => (
+                    <Link to={`/services/${detailSlug}`} className={className}>{children}</Link>
+                  )
+                : ({ children, className }: { children: React.ReactNode; className: string }) => (
+                    <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className={className}>{children}</a>
+                  );
+              return (
               <ScrollReveal key={s.name} delay={Math.min(i * 70, 400)}>
-                <a
-                  href={WHATSAPP_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="service-card-premium block group cursor-pointer"
-                >
+                <Wrapper className="service-card-premium block group cursor-pointer">
                   <div className="overflow-hidden h-48 bg-muted/30 flex items-center justify-center">
                     <img src={s.img} alt={s.name} loading="lazy" width={640} height={512} className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105" />
                   </div>
@@ -113,11 +117,14 @@ const ServicesPage = () => (
                     <p className="text-muted-foreground text-sm mb-3">{s.desc}</p>
                     <p className="text-xs text-primary font-medium mb-3">✓ {s.benefits}</p>
                     <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 group-hover:gap-3">
-                      Book This Service
+                      {detailSlug ? "Learn More" : "Book This Service"}
                       <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </span>
                   </div>
-                </a>
+                </Wrapper>
+              </ScrollReveal>
+              );
+            })}
               </ScrollReveal>
             ))}
           </div>
