@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { WHATSAPP_LINK } from "@/lib/constants";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
+import { servicePages } from "@/pages/services/serviceData";
 
 import serviceImplants from "@/assets/service-implants-real.jpg";
 import serviceAligners from "@/assets/service-aligners-real.jpg";
