@@ -1,3 +1,4 @@
+import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { WHATSAPP_LINK } from "@/lib/constants";
