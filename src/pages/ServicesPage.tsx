@@ -27,6 +27,19 @@ import serviceFilling from "@/assets/service-filling.jpg";
 import serviceSurgery from "@/assets/service-surgery-real.jpg";
 import servicePostcore from "@/assets/service-postcore-real.jpg";
 
+const serviceSlugMap: Record<string, string> = {
+  "Single Sitting RCT": "root-canal-treatment-in-malviya-nagar",
+  "Dental Implants": "dental-implants-in-malviya-nagar",
+  "Teeth Whitening": "teeth-whitening-in-malviya-nagar",
+  "Metal Braces": "braces-treatment-in-malviya-nagar",
+  "Ceramic Braces": "braces-treatment-in-malviya-nagar",
+  "Invisible Braces / Aligners": "braces-treatment-in-malviya-nagar",
+  "Painless Extractions": "tooth-extraction-in-malviya-nagar",
+  "Teeth Cleaning & Polishing": "dental-cleaning-in-malviya-nagar",
+  "Cosmetic Dentistry": "cosmetic-dentistry-in-malviya-nagar",
+  "Full Mouth Rehabilitation": "full-mouth-rehabilitation-in-malviya-nagar",
+};
+
 const services = [
   { name: "Dental Implants", desc: "Permanent tooth replacement with titanium implants that look and feel natural.", benefits: "Long-lasting, natural appearance, preserves jawbone", keyword: "affordable dental implants in Malviya Nagar", img: serviceImplants },
   { name: "Invisible Braces / Aligners", desc: "Straighten teeth discreetly with clear aligners — no metal wires needed.", benefits: "Invisible, removable, comfortable", keyword: "invisible braces dentist South Delhi", img: serviceAligners },
