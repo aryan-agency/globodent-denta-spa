@@ -1,8 +1,10 @@
+import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { WHATSAPP_LINK } from "@/lib/constants";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
+import { servicePages } from "@/pages/services/serviceData";
 
 import serviceImplants from "@/assets/service-implants-real.jpg";
 import serviceAligners from "@/assets/service-aligners-real.jpg";
@@ -25,6 +27,19 @@ import serviceImplantDenture from "@/assets/service-implant-denture.jpg";
 import serviceFilling from "@/assets/service-filling.jpg";
 import serviceSurgery from "@/assets/service-surgery-real.jpg";
 import servicePostcore from "@/assets/service-postcore-real.jpg";
+
+const serviceSlugMap: Record<string, string> = {
+  "Single Sitting RCT": "root-canal-treatment-in-malviya-nagar",
+  "Dental Implants": "dental-implants-in-malviya-nagar",
+  "Teeth Whitening": "teeth-whitening-in-malviya-nagar",
+  "Metal Braces": "braces-treatment-in-malviya-nagar",
+  "Ceramic Braces": "braces-treatment-in-malviya-nagar",
+  "Invisible Braces / Aligners": "braces-treatment-in-malviya-nagar",
+  "Painless Extractions": "tooth-extraction-in-malviya-nagar",
+  "Teeth Cleaning & Polishing": "dental-cleaning-in-malviya-nagar",
+  "Cosmetic Dentistry": "cosmetic-dentistry-in-malviya-nagar",
+  "Full Mouth Rehabilitation": "full-mouth-rehabilitation-in-malviya-nagar",
+};
 
 const services = [
   { name: "Dental Implants", desc: "Permanent tooth replacement with titanium implants that look and feel natural.", benefits: "Long-lasting, natural appearance, preserves jawbone", keyword: "affordable dental implants in Malviya Nagar", img: serviceImplants },
@@ -83,14 +98,18 @@ const ServicesPage = () => (
       <section className="section-padding">
         <div className="container mx-auto">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
-            {services.map((s, i) => (
+            {services.map((s, i) => {
+              const detailSlug = serviceSlugMap[s.name];
+              const Wrapper = detailSlug
+                ? ({ children, className }: { children: React.ReactNode; className: string }) => (
+                    <Link to={`/services/${detailSlug}`} className={className}>{children}</Link>
+                  )
+                : ({ children, className }: { children: React.ReactNode; className: string }) => (
+                    <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className={className}>{children}</a>
+                  );
+              return (
               <ScrollReveal key={s.name} delay={Math.min(i * 70, 400)}>
-                <a
-                  href={WHATSAPP_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="service-card-premium block group cursor-pointer"
-                >
+                <Wrapper className="service-card-premium block group cursor-pointer">
                   <div className="overflow-hidden h-48 bg-muted/30 flex items-center justify-center">
                     <img src={s.img} alt={s.name} loading="lazy" width={640} height={512} className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105" />
                   </div>
@@ -99,13 +118,14 @@ const ServicesPage = () => (
                     <p className="text-muted-foreground text-sm mb-3">{s.desc}</p>
                     <p className="text-xs text-primary font-medium mb-3">✓ {s.benefits}</p>
                     <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 group-hover:gap-3">
-                      Book This Service
+                      {detailSlug ? "Learn More" : "Book This Service"}
                       <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </span>
                   </div>
-                </a>
+                </Wrapper>
               </ScrollReveal>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

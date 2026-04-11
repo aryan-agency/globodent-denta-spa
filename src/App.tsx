@@ -14,6 +14,7 @@ import GalleryPage from "./pages/GalleryPage";
 import ReviewsPage from "./pages/ReviewsPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
+import ServicePage from "./pages/services/ServicePage";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<ServicesPage />} />
+              <Route path="/services/:slug" element={<ServicePage />} />
               <Route path="/doctors" element={<DoctorsPage />} />
               <Route path="/gallery" element={<GalleryPage />} />
               <Route path="/reviews" element={<ReviewsPage />} />
