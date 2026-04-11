@@ -125,8 +125,6 @@ const ServicesPage = () => (
               </ScrollReveal>
               );
             })}
-              </ScrollReveal>
-            ))}
           </div>
         </div>
       </section>
