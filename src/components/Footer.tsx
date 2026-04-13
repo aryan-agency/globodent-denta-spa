@@ -9,6 +9,7 @@ const footerLinks = [
   { label: "Gallery", path: "/gallery", id: "gallery" },
   { label: "Reviews", path: "/reviews", id: "testimonials" },
   { label: "Contact", path: "/contact", id: "contact" },
+  { label: "Blog", path: "/blog", id: "blog" },
 ];
 
 const Footer = () => {
