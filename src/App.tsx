@@ -15,6 +15,8 @@ import ReviewsPage from "./pages/ReviewsPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 import ServicePage from "./pages/services/ServicePage";
+import BlogListPage from "./pages/blog/BlogListPage";
+import BlogPage from "./pages/blog/BlogPage";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -37,6 +39,8 @@ const App = () => (
               <Route path="/gallery" element={<GalleryPage />} />
               <Route path="/reviews" element={<ReviewsPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/blog" element={<BlogListPage />} />
+              <Route path="/blog/:slug" element={<BlogPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

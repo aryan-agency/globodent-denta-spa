@@ -12,9 +12,10 @@ const navLinks = [
   { label: "Gallery", id: "gallery", path: "/gallery" },
   { label: "Reviews", id: "testimonials", path: "/reviews" },
   { label: "Contact", id: "contact", path: "/contact" },
+  { label: "Blog", id: "blog", path: "/blog" },
 ];
 
-const sectionIds = ["hero", "services", "doctors", "gallery", "testimonials", "contact"];
+const sectionIds = ["hero", "services", "doctors", "gallery", "testimonials", "contact", "blog"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +44,7 @@ const Navbar = () => {
     }
 
     // Pages with dedicated routes
-    if (["/services", "/doctors", "/gallery", "/reviews", "/contact"].includes(link.path)) {
+    if (["/services", "/doctors", "/gallery", "/reviews", "/contact", "/blog"].includes(link.path)) {
       navigate(link.path);
       return;
     }
