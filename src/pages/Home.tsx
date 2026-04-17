@@ -5,6 +5,7 @@ import logo from "@/assets/logo-new.png";
 import { WHATSAPP_LINK, PHONE_LINK, CLINIC_ADDRESS, PHONE_NUMBER, CLINIC_HOURS, GOOGLE_MAPS_LINK } from "@/lib/constants";
 import ClinicSlider from "@/components/ClinicSlider";
 import ScrollReveal from "@/components/ScrollReveal";
+import TrustedProfiles from "@/components/TrustedProfiles";
 
 import serviceImplants from "@/assets/service-implants-real.jpg";
 import serviceAligners from "@/assets/service-aligners-real.jpg";
@@ -173,6 +174,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <TrustedProfiles />
 
       {/* ══ TRUST BAR ══ */}
       <section className="bg-card border-b border-border">

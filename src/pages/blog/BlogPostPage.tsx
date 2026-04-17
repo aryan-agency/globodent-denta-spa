@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, Phone, MessageCircle, Calendar, Clock } from "lu
 import { WHATSAPP_LINK, PHONE_LINK, PHONE_NUMBER } from "@/lib/constants";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
+import TrustedProfiles from "@/components/TrustedProfiles";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import type { BlogPost } from "./blogData";
 
@@ -59,6 +60,8 @@ const BlogPostPage = ({ data }: { data: BlogPost }) => (
           </div>
         </div>
       </section>
+
+      <TrustedProfiles />
 
       {/* Content */}
       <article className="section-padding">
