@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { WHATSAPP_LINK } from "@/lib/constants";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
+import TrustedProfiles from "@/components/TrustedProfiles";
 
 const testimonials = [
   { name: "Priya S.", text: "Best dental clinic near me in Malviya Nagar! The pain-free root canal was truly painless. Highly recommended.", rating: 5 },

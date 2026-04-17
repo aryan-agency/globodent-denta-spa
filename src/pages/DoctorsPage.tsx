@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { WHATSAPP_LINK } from "@/lib/constants";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
+import TrustedProfiles from "@/components/TrustedProfiles";
 import drAanchal from "@/assets/dr-aanchal.png";
 import drRohit from "@/assets/dr-rohit.png";
 

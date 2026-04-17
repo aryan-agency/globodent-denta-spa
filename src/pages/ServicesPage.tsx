@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { WHATSAPP_LINK } from "@/lib/constants";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
+import TrustedProfiles from "@/components/TrustedProfiles";
 import { servicePages } from "@/pages/services/serviceData";
 
 import serviceImplants from "@/assets/service-implants-real.jpg";
@@ -94,6 +95,8 @@ const ServicesPage = () => (
           </p>
         </div>
       </section>
+
+      <TrustedProfiles />
 
       <section className="section-padding">
         <div className="container mx-auto">

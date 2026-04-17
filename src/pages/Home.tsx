@@ -174,6 +174,8 @@ const Home = () => {
         </div>
       </section>
 
+      <TrustedProfiles />
+
       {/* ══ TRUST BAR ══ */}
       <section className="bg-card border-b border-border">
         <div className="container mx-auto py-6 px-4">

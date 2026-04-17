@@ -3,6 +3,7 @@ import ClinicSlider from "@/components/ClinicSlider";
 import { WHATSAPP_LINK } from "@/lib/constants";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
+import TrustedProfiles from "@/components/TrustedProfiles";
 
 const GalleryPage = () => (
   <>

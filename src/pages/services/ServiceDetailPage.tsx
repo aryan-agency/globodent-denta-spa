@@ -3,6 +3,7 @@ import { ArrowRight, Phone, MessageCircle, CheckCircle, MapPin, Clock } from "lu
 import { WHATSAPP_LINK, PHONE_LINK, PHONE_NUMBER, CLINIC_ADDRESS, CLINIC_HOURS } from "@/lib/constants";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
+import TrustedProfiles from "@/components/TrustedProfiles";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export interface ServicePageData {
@@ -65,6 +66,8 @@ const ServiceDetailPage = ({ data }: { data: ServicePageData }) => (
           </div>
         </div>
       </section>
+
+      <TrustedProfiles />
 
       {/* About */}
       <section className="section-padding">

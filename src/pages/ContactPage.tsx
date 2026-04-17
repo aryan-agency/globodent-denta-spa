@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { CLINIC_ADDRESS, PHONE_NUMBER, PHONE_LINK, CLINIC_HOURS, WHATSAPP_LINK, GOOGLE_MAPS_LINK } from "@/lib/constants";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
+import TrustedProfiles from "@/components/TrustedProfiles";
 
 const ContactPage = () => (
   <>
