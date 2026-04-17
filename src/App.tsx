@@ -17,6 +17,8 @@ import NotFound from "./pages/NotFound";
 import ServicePage from "./pages/services/ServicePage";
 import BlogListPage from "./pages/blog/BlogListPage";
 import BlogPage from "./pages/blog/BlogPage";
+import BestDentalClinic from "./pages/landing/BestDentalClinic";
+import DentalClinicNearMe from "./pages/landing/DentalClinicNearMe";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -41,6 +43,8 @@ const App = () => (
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/blog" element={<BlogListPage />} />
               <Route path="/blog/:slug" element={<BlogPage />} />
+              <Route path="/best-dental-clinic-in-malviya-nagar" element={<BestDentalClinic />} />
+              <Route path="/dental-clinic-near-me-malviya-nagar" element={<DentalClinicNearMe />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
