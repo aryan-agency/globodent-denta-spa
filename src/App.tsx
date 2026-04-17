@@ -45,6 +45,7 @@ const App = () => (
               <Route path="/blog/:slug" element={<BlogPage />} />
               <Route path="/best-dental-clinic-in-malviya-nagar" element={<BestDentalClinic />} />
               <Route path="/dental-clinic-near-me-malviya-nagar" element={<DentalClinicNearMe />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />
