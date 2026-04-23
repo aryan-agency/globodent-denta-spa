@@ -491,7 +491,19 @@ const serviceBlogSeeds: SBSeed[] = [
   },
 ];
 
-function buildServiceBlogs(): Record<string, BlogPost> {
+// Sequential publish dates: service blogs run April 6 - April 25, 2026
+// in the same order they appear in serviceBlogSeeds (serviceSlug then costSlug).
+function serviceBlogDate(slug: string): string {
+  const ordered: string[] = [];
+  for (const s of serviceBlogSeeds) {
+    ordered.push(s.serviceSlug, s.costSlug);
+  }
+  const idx = ordered.indexOf(slug);
+  const day = 6 + idx; // Apr 6 + idx
+  return `2026-04-${String(day).padStart(2, "0")}`;
+}
+
+
   const result: Record<string, BlogPost> = {};
   const allServiceBlogPairs = serviceBlogSeeds.flatMap(s => [
     { title: `${s.name} in Malviya Nagar`, slug: s.serviceSlug },
