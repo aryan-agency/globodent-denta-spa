@@ -503,7 +503,7 @@ function serviceBlogDate(slug: string): string {
   return `2026-04-${String(day).padStart(2, "0")}`;
 }
 
-
+function buildServiceBlogs(): Record<string, BlogPost> {
   const result: Record<string, BlogPost> = {};
   const allServiceBlogPairs = serviceBlogSeeds.flatMap(s => [
     { title: `${s.name} in Malviya Nagar`, slug: s.serviceSlug },
