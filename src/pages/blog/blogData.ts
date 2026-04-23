@@ -417,6 +417,8 @@ export const blogPosts: Record<string, BlogPost> = {
       { q: "Can all teeth be treated with single sitting RCT?", a: "Most teeth can be treated in a single sitting. However, teeth with severe infection, abscess, or complex anatomy may require 2 visits. Your dentist at Globodent Dental Spa® will determine the best approach for your case." },
     ],
   },
+
+  ...buildServiceBlogs(),
 };
 
 export const blogPostList = Object.values(blogPosts);
