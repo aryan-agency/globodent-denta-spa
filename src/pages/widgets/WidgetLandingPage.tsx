@@ -11,11 +11,12 @@ export interface WidgetLandingProps {
   canonical: string;
   h1: string;
   intro: string;
-  bullets: string[];
   Icon: LucideIcon;
+  /** Long-form body rendered inside the prose container */
+  children: React.ReactNode;
 }
 
-const WidgetLandingPage = ({ title, description, canonical, h1, intro, bullets, Icon }: WidgetLandingProps) => {
+const WidgetLandingPage = ({ title, description, canonical, h1, intro, Icon, children }: WidgetLandingProps) => {
   return (
     <>
       <SEOHead title={title} description={description} canonical={canonical} />
@@ -33,23 +34,21 @@ const WidgetLandingPage = ({ title, description, canonical, h1, intro, bullets, 
 
       <TrustedProfiles />
 
-      {/* Benefits */}
+      {/* Long-form body */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-2xl">
-          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 text-center">
-            Why Patients Choose Us
-          </h2>
-          <ul className="space-y-3">
-            {bullets.map((b, i) => (
-              <li
-                key={i}
-                className="flex items-start gap-3 p-4 rounded-lg border border-border bg-card text-card-foreground"
-              >
-                <span className="mt-1 inline-block w-2 h-2 rounded-full bg-primary shrink-0" />
-                <span className="text-base">{b}</span>
-              </li>
-            ))}
-          </ul>
+        <div className="container mx-auto px-4 max-w-3xl">
+          <article
+            className="
+              text-foreground leading-relaxed space-y-5
+              [&_h2]:text-2xl md:[&_h2]:text-3xl [&_h2]:font-semibold [&_h2]:mt-10 [&_h2]:mb-3 [&_h2]:text-foreground
+              [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:mt-6 [&_h3]:mb-2 [&_h3]:text-foreground
+              [&_p]:text-base [&_p]:text-muted-foreground
+              [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_ul]:text-muted-foreground
+              [&_a]:text-primary [&_a]:underline [&_a]:underline-offset-4 hover:[&_a]:text-primary/80
+            "
+          >
+            {children}
+          </article>
         </div>
       </section>
 
