@@ -19,6 +19,11 @@ import BlogListPage from "./pages/blog/BlogListPage";
 import BlogPage from "./pages/blog/BlogPage";
 import BestDentalClinic from "./pages/landing/BestDentalClinic";
 import DentalClinicNearMe from "./pages/landing/DentalClinicNearMe";
+import PainlessTreatment from "./pages/widgets/PainlessTreatment";
+import AdvancedTechnology from "./pages/widgets/AdvancedTechnology";
+import ExperiencedDentist from "./pages/widgets/ExperiencedDentist";
+import AffordableTreatment from "./pages/widgets/AffordableTreatment";
+import TrustedClinic from "./pages/widgets/TrustedClinic";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -45,6 +50,11 @@ const App = () => (
               <Route path="/blog/:slug" element={<BlogPage />} />
               <Route path="/best-dental-clinic-in-malviya-nagar" element={<BestDentalClinic />} />
               <Route path="/dental-clinic-near-me-malviya-nagar" element={<DentalClinicNearMe />} />
+              <Route path="/painless-dental-treatment-malviya-nagar" element={<PainlessTreatment />} />
+              <Route path="/advanced-dental-technology-malviya-nagar" element={<AdvancedTechnology />} />
+              <Route path="/experienced-dentist-malviya-nagar" element={<ExperiencedDentist />} />
+              <Route path="/affordable-dental-treatment-malviya-nagar" element={<AffordableTreatment />} />
+              <Route path="/trusted-dental-clinic-south-delhi" element={<TrustedClinic />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

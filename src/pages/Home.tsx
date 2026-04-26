@@ -1,5 +1,6 @@
 import { Shield, Zap, Users, IndianRupee, Heart, Star, ChevronLeft, ChevronRight, MapPin, Phone, Clock, ArrowRight, Plus, Minus } from "lucide-react";
 import { useState, useEffect, useCallback, useRef } from "react";
+import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 import logo from "@/assets/logo-new.png";
 import { WHATSAPP_LINK, PHONE_LINK, CLINIC_ADDRESS, PHONE_NUMBER, CLINIC_HOURS, GOOGLE_MAPS_LINK } from "@/lib/constants";
@@ -33,11 +34,11 @@ import drRohit from "@/assets/dr-rohit.png";
 
 /* ── Data ── */
 const whyChoose = [
-  { icon: Shield, title: "Painless Treatments", desc: "Advanced anesthesia techniques for a comfortable, pain-free experience." },
-  { icon: Zap, title: "Advanced Technology", desc: "State-of-the-art equipment including digital X-rays and laser dentistry." },
-  { icon: Users, title: "Experienced Specialists", desc: "Board-certified dentists with decades of combined experience." },
-  { icon: IndianRupee, title: "Affordable Pricing", desc: "Premium dental care at prices that won't break the bank." },
-  { icon: Heart, title: "Trusted in South Delhi", desc: "Hundreds of happy patients across Malviya Nagar and beyond." },
+  { icon: Shield, title: "Painless Treatments", desc: "Advanced anesthesia techniques for a comfortable, pain-free experience.", href: "/painless-dental-treatment-malviya-nagar" },
+  { icon: Zap, title: "Advanced Technology", desc: "State-of-the-art equipment including digital X-rays and laser dentistry.", href: "/advanced-dental-technology-malviya-nagar" },
+  { icon: Users, title: "Experienced Specialists", desc: "Board-certified dentists with decades of combined experience.", href: "/experienced-dentist-malviya-nagar" },
+  { icon: IndianRupee, title: "Affordable Pricing", desc: "Premium dental care at prices that won't break the bank.", href: "/affordable-dental-treatment-malviya-nagar" },
+  { icon: Heart, title: "Trusted in South Delhi", desc: "Hundreds of happy patients across Malviya Nagar and beyond.", href: "/trusted-dental-clinic-south-delhi" },
 ];
 
 const services = [
@@ -182,13 +183,17 @@ const Home = () => {
         <div className="container mx-auto py-6 px-4">
           <ScrollReveal>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-              {whyChoose.map((item, i) => (
-                <div key={item.title} className="flex flex-col items-center text-center p-3">
+              {whyChoose.map((item) => (
+                <Link
+                  key={item.title}
+                  to={item.href}
+                  className="flex flex-col items-center text-center p-3 rounded-lg hover:bg-accent/50 transition-colors"
+                >
                   <div className="h-10 w-10 bg-spa-blue-light rounded-lg flex items-center justify-center mb-2">
                     <item.icon className="h-5 w-5 text-primary" />
                   </div>
                   <span className="text-xs font-semibold">{item.title}</span>
-                </div>
+                </Link>
               ))}
             </div>
           </ScrollReveal>
