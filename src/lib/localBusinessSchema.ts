@@ -1,4 +1,4 @@
-import { CLINIC_ADDRESS, PHONE_NUMBER } from "./constants";
+import { CLINIC_ADDRESS } from "./constants";
 
 const BASE_URL = "https://globodentdentalspa.com";
 
@@ -85,5 +85,4 @@ export const buildLocalBusinessSchema = (opts: {
     areaServed: "IN",
     availableLanguage: ["English", "Hindi"],
   },
-  _phone: PHONE_NUMBER, // unused, keeps PHONE_NUMBER import meaningful for tree-shaking
 });
