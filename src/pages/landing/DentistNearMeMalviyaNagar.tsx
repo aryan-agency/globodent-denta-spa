@@ -1,6 +1,7 @@
 import { MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import WidgetLandingPage from "../widgets/WidgetLandingPage";
+import { buildLocalBusinessSchema } from "@/lib/localBusinessSchema";
 
 const DentistNearMeMalviyaNagar = () => (
   <WidgetLandingPage
@@ -10,6 +11,10 @@ const DentistNearMeMalviyaNagar = () => (
     h1="Dentist Near Me in Malviya Nagar — Painless, Modern, Trusted"
     intro="When dental pain strikes or a check-up is overdue, you don’t want to travel across the city. You want a trusted dentist near you — one with the right qualifications, modern equipment and a calm, comfortable chair. Globodent Dental Spa is right in the heart of Malviya Nagar, easily reachable from across South Delhi, and trusted by thousands of local patients for everything from routine cleanings to advanced cosmetic and surgical care."
     Icon={MapPin}
+    jsonLd={buildLocalBusinessSchema({
+      pagePath: "/dentist-near-me-in-malviya-nagar",
+      name: "Globodent Dental Spa — Dentist Near Me in Malviya Nagar",
+    })}
   >
     <h2>Why “Dentist Near Me” Should Mean More Than Distance</h2>
     <p>
