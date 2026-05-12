@@ -19,6 +19,8 @@ import BlogListPage from "./pages/blog/BlogListPage";
 import BlogPage from "./pages/blog/BlogPage";
 import BestDentalClinic from "./pages/landing/BestDentalClinic";
 import DentalClinicNearMe from "./pages/landing/DentalClinicNearMe";
+import BestDentistMalviyaNagar from "./pages/landing/BestDentistMalviyaNagar";
+import DentistNearMeMalviyaNagar from "./pages/landing/DentistNearMeMalviyaNagar";
 import PainlessTreatment from "./pages/widgets/PainlessTreatment";
 import AdvancedTechnology from "./pages/widgets/AdvancedTechnology";
 import ExperiencedDentist from "./pages/widgets/ExperiencedDentist";
@@ -50,6 +52,8 @@ const App = () => (
               <Route path="/blog/:slug" element={<BlogPage />} />
               <Route path="/best-dental-clinic-in-malviya-nagar" element={<BestDentalClinic />} />
               <Route path="/dental-clinic-near-me-malviya-nagar" element={<DentalClinicNearMe />} />
+              <Route path="/best-dentist-in-malviya-nagar" element={<BestDentistMalviyaNagar />} />
+              <Route path="/dentist-near-me-in-malviya-nagar" element={<DentistNearMeMalviyaNagar />} />
               <Route path="/painless-dental-treatment-malviya-nagar" element={<PainlessTreatment />} />
               <Route path="/advanced-dental-technology-malviya-nagar" element={<AdvancedTechnology />} />
               <Route path="/experienced-dentist-malviya-nagar" element={<ExperiencedDentist />} />
