@@ -162,7 +162,7 @@ const Home = () => {
               Best Dental Clinic in Malviya Nagar for Pain-Free Advanced Treatments
             </h1>
             <p className="text-lg md:text-xl mb-8 text-primary-foreground/80 animate-fade-in-up text-center md:text-left" style={{ animationDelay: "0.35s" }}>
-              Affordable, Advanced & Trusted Dental Care in South Delhi
+              Globodent Dental Spa® is Malviya nagar's most trusted destination for premium, painless and specialist-led dentistry. Experience world-class treatment in a luxurious spa setting.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up justify-center md:justify-start" style={{ animationDelay: "0.45s" }}>
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn-glow bg-primary text-primary-foreground px-8 py-3.5 rounded-lg font-semibold text-base">
