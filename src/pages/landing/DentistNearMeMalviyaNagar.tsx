@@ -109,6 +109,65 @@ const DentistNearMeMalviyaNagar = () => (
       to compare honestly.
     </p>
 
+    <h2>Neighbourhoods We Serve Across South Delhi</h2>
+    <p>
+      Because we sit right in the centre of Malviya Nagar, our clinic is genuinely the closest
+      quality dental option for several South Delhi neighbourhoods. Patients regularly travel to
+      us in under 15 minutes from Saket, Hauz Khas, Green Park, Shivalik, Khirki Extension,
+      Panchsheel Park, Sheikh Sarai, Pamposh Enclave, Pushp Vihar, Lado Sarai and Saidulajab. The
+      Malviya Nagar metro station is a short auto ride away, and dedicated parking outside the
+      clinic makes drive-in visits effortless.
+    </p>
+    <p>
+      If you’re searching for a <em>dental clinic near me</em> from any of these areas, you’ll
+      almost always find us at the top of Google Maps — and more importantly, at the top of local
+      recommendations.
+    </p>
+
+    <h2>What “Near Me” Should Actually Mean for Dental Care</h2>
+    <p>
+      A truly local clinic isn’t just close on the map — it’s close to your daily life. That means
+      flexible scheduling around school runs and office hours, the ability to drop in for a quick
+      five-minute follow-up without a full appointment, and a team that remembers your name and
+      your treatment history. Our front-desk and clinical teams have been together for years,
+      which is why returning patients rarely have to repeat themselves.
+    </p>
+
+    <h3>Same-Day Treatments You Can Walk In For</h3>
+    <p>
+      Many of the most common reasons people search for a “dentist near me” can be solved in a
+      single visit at Globodent — including emergency pain relief, single-sitting{" "}
+      <Link to="/services/root-canal-treatment-in-malviya-nagar">root canal treatment</Link>,
+      tooth extractions, fillings, scaling, denture repairs and broken-tooth restorations. We
+      block out emergency slots every working day so urgent cases don’t have to wait.
+    </p>
+
+    <h3>Planned Treatments, Phased Around Your Schedule</h3>
+    <p>
+      For larger work like{" "}
+      <Link to="/services/dental-implants-in-malviya-nagar">dental implants</Link>, braces, clear
+      aligners or full-mouth rehabilitation, we sit with you and design a phased plan that fits
+      your calendar and your budget. You’ll know exactly how many visits to expect, what each one
+      costs, and how each phase builds on the last — no surprises mid-treatment.
+    </p>
+
+    <h3>Hygiene, Comfort and Anxiety-Friendly Care</h3>
+    <p>
+      Many patients who type “dentist near me” are actually nervous patients hoping the next
+      clinic will finally feel different. Our spa-like environment, gentle communication, modern
+      anaesthesia and noise-cancelling options are designed exactly for that. Several long-term
+      patients today started as people who hadn’t visited a dentist in 5–10 years out of fear —
+      and now come in for routine check-ups without a second thought.
+    </p>
+
+    <h3>Honest Second Opinions</h3>
+    <p>
+      Already received a quote from another clinic and not sure what to do? Bring your X-rays and
+      treatment plan to us — we offer honest, written second opinions. Sometimes we agree with the
+      original plan; sometimes we suggest a smaller, cheaper alternative. Either way, you walk out
+      better informed and never under pressure to switch.
+    </p>
+
     <h2>How to Find Us</h2>
     <p>
       Globodent Dental Spa is located in Shivalik Enclave, Block E, Malviya Nagar — easy parking,
@@ -121,6 +180,8 @@ const DentistNearMeMalviyaNagar = () => (
       <li>Free first consultation and written treatment plan.</li>
       <li>Cashless and EMI options for major treatments.</li>
       <li>Trusted by hundreds of verified Google-reviewed patients.</li>
+      <li>Open six days a week, with dedicated emergency time slots.</li>
+      <li>Multilingual team — comfortable in English and Hindi.</li>
     </ul>
 
     <p>
