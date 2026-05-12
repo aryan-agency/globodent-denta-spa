@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { WHATSAPP_LINK, PHONE_LINK, PHONE_NUMBER } from "@/lib/constants";
+import { buildLocalBusinessSchema } from "@/lib/localBusinessSchema";
 
 const services = [
   { name: "Root Canal Treatment", slug: "root-canal-treatment-in-malviya-nagar" },
@@ -40,15 +41,10 @@ const faqs = [
   { q: "How can I book a consultation?", a: `You can call us at ${PHONE_NUMBER}, message us on WhatsApp or visit our clinic in Shivalik, Malviya Nagar. Walk-ins are welcome but appointments are preferred.` },
 ];
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Dentist",
+const jsonLd = buildLocalBusinessSchema({
+  pagePath: "/best-dental-clinic-in-malviya-nagar",
   name: "Globodent Dental Spa — Best Dental Clinic in Malviya Nagar",
-  url: "https://globodentdentalspa.com/best-dental-clinic-in-malviya-nagar",
-  areaServed: "Malviya Nagar, South Delhi",
-  priceRange: "₹₹",
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "500" },
-};
+});
 
 const BestDentalClinic = () => (
   <>

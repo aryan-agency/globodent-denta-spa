@@ -15,6 +15,7 @@ import {
   GOOGLE_MAPS_EMBED,
   GOOGLE_MAPS_LINK,
 } from "@/lib/constants";
+import { buildLocalBusinessSchema } from "@/lib/localBusinessSchema";
 
 const nearbyAreas = [
   "Malviya Nagar", "Saket", "Hauz Khas", "Green Park", "Shivalik", "Khirki Extension",
@@ -38,21 +39,10 @@ const faqs = [
   { q: "Do you handle dental emergencies after hours?", a: "For genuine emergencies — severe pain, swelling, dental trauma — we make every effort to accommodate same-day or next-morning slots. Call us first and we'll guide you on next steps." },
 ];
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Dentist",
-  name: "Globodent Dental Spa — Dental Clinic Near Me",
-  url: "https://globodentdentalspa.com/dental-clinic-near-me-malviya-nagar",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Ground Floor, 3/37, Shivalik Rd, Shivalik Enclave, Block E",
-    addressLocality: "Malviya Nagar, New Delhi",
-    postalCode: "110017",
-    addressCountry: "IN",
-  },
-  openingHours: "Mo-Su 15:00-20:00",
-  telephone: "+91-98555-79244",
-};
+const jsonLd = buildLocalBusinessSchema({
+  pagePath: "/dental-clinic-near-me-malviya-nagar",
+  name: "Globodent Dental Spa — Dental Clinic Near Me in Malviya Nagar",
+});
 
 const DentalClinicNearMe = () => (
   <>
