@@ -12,14 +12,16 @@ export interface WidgetLandingProps {
   h1: string;
   intro: string;
   Icon: LucideIcon;
+  /** Optional JSON-LD structured data */
+  jsonLd?: object;
   /** Long-form body rendered inside the prose container */
   children: React.ReactNode;
 }
 
-const WidgetLandingPage = ({ title, description, canonical, h1, intro, Icon, children }: WidgetLandingProps) => {
+const WidgetLandingPage = ({ title, description, canonical, h1, intro, Icon, jsonLd, children }: WidgetLandingProps) => {
   return (
     <>
-      <SEOHead title={title} description={description} canonical={canonical} />
+      <SEOHead title={title} description={description} canonical={canonical} jsonLd={jsonLd} />
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary/10 via-background to-accent/10 pt-28 pb-12">

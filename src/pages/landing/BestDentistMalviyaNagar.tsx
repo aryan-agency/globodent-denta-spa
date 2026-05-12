@@ -1,6 +1,7 @@
 import { Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import WidgetLandingPage from "../widgets/WidgetLandingPage";
+import { buildLocalBusinessSchema } from "@/lib/localBusinessSchema";
 
 const BestDentistMalviyaNagar = () => (
   <WidgetLandingPage
@@ -10,6 +11,10 @@ const BestDentistMalviyaNagar = () => (
     h1="Best Dentist in Malviya Nagar — Trusted by South Delhi Families"
     intro="Choosing the best dentist in Malviya Nagar isn’t just about who is closest — it’s about who you can trust with your smile for years to come. At Globodent Dental Spa, patients across Malviya Nagar and South Delhi come to us for modern, painless dental care delivered by experienced specialists in a clean, comfortable, spa-like environment. From routine check-ups to complex full-mouth rehabilitation, every treatment is built around three things: comfort, transparency and long-lasting results."
     Icon={Award}
+    jsonLd={buildLocalBusinessSchema({
+      pagePath: "/best-dentist-in-malviya-nagar",
+      name: "Globodent Dental Spa — Best Dentist in Malviya Nagar",
+    })}
   >
     <h2>Why Choosing the Right Dentist Matters</h2>
     <p>
