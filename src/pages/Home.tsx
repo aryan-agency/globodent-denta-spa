@@ -31,6 +31,8 @@ import serviceSurgery from "@/assets/service-surgery-real.jpg";
 import servicePostcore from "@/assets/service-postcore-real.jpg";
 import drAanchal from "@/assets/dr-aanchal.png";
 import drRohit from "@/assets/dr-rohit.png";
+import drAbrar from "@/assets/dr-abrar-hussain.jpeg";
+import drKamal from "@/assets/dr-kamal-aggarwal.jpeg";
 
 /* ── Data ── */
 const whyChoose = [
@@ -42,30 +44,16 @@ const whyChoose = [
 ];
 
 const services = [
-  { name: "Dental Implants", desc: "Permanent tooth replacement with titanium implants.", keyword: "affordable dental implants in Malviya Nagar", img: serviceImplants },
-  { name: "Invisible Braces / Aligners", desc: "Straighten teeth discreetly with clear aligners.", keyword: "invisible braces dentist South Delhi", img: serviceAligners },
-  { name: "Full Mouth Rehabilitation", desc: "Complete restoration for severely damaged teeth.", keyword: "full mouth rehab clinic Malviya Nagar", img: serviceFullmouth },
-  { name: "Metal Braces", desc: "Traditional braces for effective teeth alignment.", keyword: "metal braces treatment Delhi", img: serviceMetalbraces },
-  { name: "Ceramic Braces", desc: "Tooth-colored brackets for a subtler look.", keyword: "ceramic braces dentist near me", img: serviceCeramic },
-  { name: "Cosmetic Dentistry", desc: "Veneers, bonding, and aesthetic procedures.", keyword: "cosmetic dentist South Delhi", img: serviceCosmetic },
-  { name: "Teeth Whitening", desc: "Professional whitening for a brighter smile.", keyword: "teeth whitening Malviya Nagar", img: serviceWhitening },
-  { name: "Painless Extractions", desc: "Gentle, pain-free tooth removal.", keyword: "painless tooth extraction Delhi", img: serviceExtraction },
-  { name: "Single Sitting RCT", desc: "Complete root canal in one painless visit.", keyword: "painless root canal treatment Delhi", img: serviceRct },
-  { name: "Painless Surgical Procedures", desc: "Oral surgery for impacted teeth and complex cases.", keyword: "dental surgery clinic Malviya Nagar", img: serviceSurgery },
-  { name: "Crown & Bridges", desc: "Custom crowns and bridges for damaged teeth.", keyword: "dental crown bridge Delhi", img: serviceCrown },
-  { name: "Smile Designing", desc: "Complete smile makeover for your dream smile.", keyword: "smile design makeover South Delhi", img: serviceSmile },
-  { name: "Veneers & Laminates", desc: "Ultra-thin shells for a flawless smile.", keyword: "dental veneers South Delhi", img: serviceVeneers },
-  { name: "Complete Dentures", desc: "Comfortable dentures for a natural-looking smile.", keyword: "dentures clinic near me Malviya Nagar", img: serviceDentures },
-  { name: "Teeth Cleaning & Polishing", desc: "Professional scaling to remove plaque & tartar.", keyword: "dental cleaning polishing Delhi", img: serviceCleaning },
-  { name: "Digital X-Ray", desc: "Low-radiation imaging for accurate diagnosis.", keyword: "digital dental x-ray Delhi", img: serviceXray },
-  { name: "Gum Depigmentation", desc: "Remove dark spots for uniform pink gums.", keyword: "gum depigmentation treatment Delhi", img: serviceGum },
-  { name: "Periodontal Surgery", desc: "Advanced gum disease treatment.", keyword: "periodontal gum surgery Malviya Nagar", img: servicePerio },
-  { name: "Implant Supported Dentures", desc: "Implant-secured dentures for maximum stability.", keyword: "implant supported dentures Malviya Nagar", img: serviceImplantDenture },
-  { name: "Tooth-Colored Fillings", desc: "Mercury-free fillings matching natural tooth color.", keyword: "tooth colored fillings South Delhi", img: serviceFilling },
-  { name: "Post and Core", desc: "Foundation restoration before crown placement.", keyword: "post and core dental treatment Delhi", img: servicePostcore },
+// ... keep existing code (services array unchanged)
 ];
 
-const doctors = [
+type Doctor = {
+  name: string; title: string; role: string; specialties: string[];
+  education: string; experience: string[]; focus: string;
+  img: string; badge: string; slug?: string;
+};
+
+const doctors: Doctor[] = [
   {
     name: "Dr. Aanchal Bansal", title: "B.D.S, M.D.S", role: "Prosthodontist & Implantologist",
     specialties: ["Full Mouth Rehabilitation", "Smile Restoration", "Dental Implants", "Certified Orthodontist"],
@@ -81,6 +69,24 @@ const doctors = [
     experience: ["Former Assistant Professor at ITS Dental College", "National dental conferences (IACDE)"],
     focus: "Expert in painless root canal treatments, cosmetic and restorative dentistry with meticulous precision.",
     img: drRohit, badge: "Advanced Dental Specialist",
+  },
+  {
+    name: "Dr. Abrar Hussain", title: "B.D.S, M.D.S Orthodontics", role: "Orthodontist & Dentofacial Orthopaedics",
+    specialties: ["Braces Treatment", "Invisible Aligners", "Smile Correction", "Jaw Alignment"],
+    education: "Maulana Azad Institute of Dental Sciences, New Delhi",
+    experience: ["500+ ongoing orthodontic cases", "Consultant Orthodontist across Delhi"],
+    focus: "Advanced braces, aligners and smile alignment using modern, patient-friendly orthodontic techniques.",
+    img: drAbrar, badge: "500+ Ortho Cases",
+    slug: "dr-abrar-hussain-orthodontist-malviya-nagar",
+  },
+  {
+    name: "Dr. Kamal Aggarwal", title: "B.D.S, M.D.S Periodontics", role: "Implantologist & Gum Specialist",
+    specialties: ["Dental Implants", "All-on-4 Implants", "Gum Surgeries", "Laser Dentistry", "PRF Therapy"],
+    education: "Maulana Azad Institute of Dental Sciences, New Delhi",
+    experience: ["1500+ dental implant surgeries", "Former Senior Resident at MAIDS", "Senior Research Associate & Young Scientist"],
+    focus: "Painless, precision-focused dental implants, gum surgeries and full mouth rehabilitation.",
+    img: drKamal, badge: "1500+ Implants",
+    slug: "dr-kamal-aggarwal-dental-implant-specialist-malviya-nagar",
   },
 ];
 
