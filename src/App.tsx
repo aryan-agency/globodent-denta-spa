@@ -26,6 +26,8 @@ import AdvancedTechnology from "./pages/widgets/AdvancedTechnology";
 import ExperiencedDentist from "./pages/widgets/ExperiencedDentist";
 import AffordableTreatment from "./pages/widgets/AffordableTreatment";
 import TrustedClinic from "./pages/widgets/TrustedClinic";
+import DrAbrarHussain from "./pages/doctors/DrAbrarHussain";
+import DrKamalAggarwal from "./pages/doctors/DrKamalAggarwal";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -59,6 +61,8 @@ const App = () => (
               <Route path="/experienced-dentist-malviya-nagar" element={<ExperiencedDentist />} />
               <Route path="/affordable-dental-treatment-malviya-nagar" element={<AffordableTreatment />} />
               <Route path="/trusted-dental-clinic-south-delhi" element={<TrustedClinic />} />
+              <Route path="/doctors/dr-abrar-hussain-orthodontist-malviya-nagar" element={<DrAbrarHussain />} />
+              <Route path="/doctors/dr-kamal-aggarwal-dental-implant-specialist-malviya-nagar" element={<DrKamalAggarwal />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

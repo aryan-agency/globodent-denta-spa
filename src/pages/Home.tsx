@@ -31,6 +31,8 @@ import serviceSurgery from "@/assets/service-surgery-real.jpg";
 import servicePostcore from "@/assets/service-postcore-real.jpg";
 import drAanchal from "@/assets/dr-aanchal.png";
 import drRohit from "@/assets/dr-rohit.png";
+import drAbrar from "@/assets/dr-abrar-hussain.jpeg";
+import drKamal from "@/assets/dr-kamal-aggarwal.jpeg";
 
 /* ── Data ── */
 const whyChoose = [
@@ -65,7 +67,13 @@ const services = [
   { name: "Post and Core", desc: "Foundation restoration before crown placement.", keyword: "post and core dental treatment Delhi", img: servicePostcore },
 ];
 
-const doctors = [
+type Doctor = {
+  name: string; title: string; role: string; specialties: string[];
+  education: string; experience: string[]; focus: string;
+  img: string; badge: string; slug?: string;
+};
+
+const doctors: Doctor[] = [
   {
     name: "Dr. Aanchal Bansal", title: "B.D.S, M.D.S", role: "Prosthodontist & Implantologist",
     specialties: ["Full Mouth Rehabilitation", "Smile Restoration", "Dental Implants", "Certified Orthodontist"],
@@ -81,6 +89,24 @@ const doctors = [
     experience: ["Former Assistant Professor at ITS Dental College", "National dental conferences (IACDE)"],
     focus: "Expert in painless root canal treatments, cosmetic and restorative dentistry with meticulous precision.",
     img: drRohit, badge: "Advanced Dental Specialist",
+  },
+  {
+    name: "Dr. Abrar Hussain", title: "B.D.S, M.D.S Orthodontics", role: "Orthodontist & Dentofacial Orthopaedics",
+    specialties: ["Braces Treatment", "Invisible Aligners", "Smile Correction", "Jaw Alignment"],
+    education: "Maulana Azad Institute of Dental Sciences, New Delhi",
+    experience: ["500+ ongoing orthodontic cases", "Consultant Orthodontist across Delhi"],
+    focus: "Advanced braces, aligners and smile alignment using modern, patient-friendly orthodontic techniques.",
+    img: drAbrar, badge: "500+ Ortho Cases",
+    slug: "dr-abrar-hussain-orthodontist-malviya-nagar",
+  },
+  {
+    name: "Dr. Kamal Aggarwal", title: "B.D.S, M.D.S Periodontics", role: "Implantologist & Gum Specialist",
+    specialties: ["Dental Implants", "All-on-4 Implants", "Gum Surgeries", "Laser Dentistry", "PRF Therapy"],
+    education: "Maulana Azad Institute of Dental Sciences, New Delhi",
+    experience: ["1500+ dental implant surgeries", "Former Senior Resident at MAIDS", "Senior Research Associate & Young Scientist"],
+    focus: "Painless, precision-focused dental implants, gum surgeries and full mouth rehabilitation.",
+    img: drKamal, badge: "1500+ Implants",
+    slug: "dr-kamal-aggarwal-dental-implant-specialist-malviya-nagar",
   },
 ];
 
@@ -285,7 +311,11 @@ const Home = () => {
 
                     {/* Content */}
                     <div className="w-full md:w-7/12">
-                      <h3 className="text-2xl md:text-3xl font-heading mb-1">{doc.name}</h3>
+                      <h3 className="text-2xl md:text-3xl font-heading mb-1">
+                        {doc.slug ? (
+                          <Link to={`/doctors/${doc.slug}`} className="hover:text-primary transition-colors">{doc.name}</Link>
+                        ) : doc.name}
+                      </h3>
                       <p className="text-muted-foreground text-sm mb-1">{doc.title}</p>
                       <p className="text-primary font-semibold text-lg mb-5">{doc.role}</p>
 
