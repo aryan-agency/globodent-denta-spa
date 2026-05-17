@@ -311,7 +311,11 @@ const Home = () => {
 
                     {/* Content */}
                     <div className="w-full md:w-7/12">
-                      <h3 className="text-2xl md:text-3xl font-heading mb-1">{doc.name}</h3>
+                      <h3 className="text-2xl md:text-3xl font-heading mb-1">
+                        {doc.slug ? (
+                          <Link to={`/doctors/${doc.slug}`} className="hover:text-primary transition-colors">{doc.name}</Link>
+                        ) : doc.name}
+                      </h3>
                       <p className="text-muted-foreground text-sm mb-1">{doc.title}</p>
                       <p className="text-primary font-semibold text-lg mb-5">{doc.role}</p>
 
