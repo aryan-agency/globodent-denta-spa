@@ -7,6 +7,8 @@ import { WHATSAPP_LINK, PHONE_LINK, CLINIC_ADDRESS, PHONE_NUMBER, CLINIC_HOURS, 
 import ClinicSlider from "@/components/ClinicSlider";
 import ScrollReveal from "@/components/ScrollReveal";
 import TrustedProfiles from "@/components/TrustedProfiles";
+import SEOHead from "@/components/SEOHead";
+import { buildLocalBusinessSchema } from "@/lib/localBusinessSchema";
 
 import serviceImplants from "@/assets/service-implants-real.jpg";
 import serviceAligners from "@/assets/service-aligners-real.jpg";
@@ -163,6 +165,12 @@ const Home = () => {
 
   return (
     <>
+      <SEOHead
+        title="Globodent Dental Spa | Best Dental Clinic in Malviya Nagar, New Delhi"
+        description="Visit Globodent Dental Spa — the premium dental spa experience in Malviya Nagar, South Delhi. Painless implants, root canal, cosmetic dentistry. Book now!"
+        canonical="/"
+        jsonLd={buildLocalBusinessSchema({ pagePath: "/" })}
+      />
       {/* ══ HERO ══ */}
       <section id="hero" ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0" style={{ transform: `translateY(${heroOffset}px)` }}>

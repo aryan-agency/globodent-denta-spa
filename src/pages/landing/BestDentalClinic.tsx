@@ -41,18 +41,29 @@ const faqs = [
   { q: "How can I book a consultation?", a: `You can call us at ${PHONE_NUMBER}, message us on WhatsApp or visit our clinic in Shivalik, Malviya Nagar. Walk-ins are welcome but appointments are preferred.` },
 ];
 
-const jsonLd = buildLocalBusinessSchema({
+const localBusinessSchema = buildLocalBusinessSchema({
   pagePath: "/best-dental-clinic-in-malviya-nagar",
   name: "Globodent Dental Spa — Best Dental Clinic in Malviya Nagar",
 });
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
 
 const BestDentalClinic = () => (
   <>
     <SEOHead
       title="Best Dental Clinic in Malviya Nagar | Globodent Dental Spa"
-      description="Globodent Dental Spa is the best dental clinic in Malviya Nagar, South Delhi. Specialist dentists, painless treatments, advanced technology & premium spa experience."
+      description="Looking for the best dental clinic in Malviya Nagar? Globodent Dental Spa offers world-class dental care in a relaxing spa environment. Call now."
       canonical="/best-dental-clinic-in-malviya-nagar"
-      jsonLd={jsonLd}
+      ogType="website"
+      jsonLd={[localBusinessSchema, faqSchema]}
     />
 
     <section className="relative pt-28 md:pt-32 pb-12 bg-gradient-to-br from-spa-blue-light via-background to-background">
