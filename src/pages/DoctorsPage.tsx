@@ -70,6 +70,13 @@ const DoctorsPage = () => (
             At Globodent Dental Spa<sup className="text-[0.6em]">®</sup>, our experienced team of specialists combines advanced technology
             with compassionate care to deliver the best dental treatments in South Delhi.
           </p>
+          <p className="text-muted-foreground max-w-2xl mx-auto mt-4">
+            Our specialists are based at Globodent Dental Spa, the{" "}
+            <Link to="/best-dental-clinic-in-malviya-nagar" className="text-primary font-semibold hover:underline">
+              best dental clinic in Malviya Nagar
+            </Link>
+            , South Delhi.
+          </p>
         </div>
       </section>
 

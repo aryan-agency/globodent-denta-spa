@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Home", id: "hero", path: "/" },
   { label: "Services", id: "services", path: "/services" },
   { label: "Doctors", id: "doctors", path: "/doctors" },
+  { label: "Best Clinic in Malviya Nagar", id: "best-clinic", path: "/best-dental-clinic-in-malviya-nagar" },
   { label: "Gallery", id: "gallery", path: "/gallery" },
   { label: "Reviews", id: "testimonials", path: "/reviews" },
   { label: "Contact", id: "contact", path: "/contact" },
@@ -44,7 +45,7 @@ const Navbar = () => {
     }
 
     // Pages with dedicated routes
-    if (["/services", "/doctors", "/gallery", "/reviews", "/contact", "/blog"].includes(link.path)) {
+    if (link.path !== "/" && !link.path.startsWith("/#")) {
       navigate(link.path);
       return;
     }

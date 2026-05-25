@@ -183,6 +183,13 @@ const ServiceDetailPage = ({ data }: { data: ServicePageData }) => (
               View All Services <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
+          <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
+            Visit us at our clinic — rated the{" "}
+            <Link to="/best-dental-clinic-in-malviya-nagar" className="text-primary font-semibold hover:underline">
+              best dental clinic in Malviya Nagar
+            </Link>{" "}
+            by hundreds of patients in South Delhi.
+          </p>
         </div>
       </section>
 

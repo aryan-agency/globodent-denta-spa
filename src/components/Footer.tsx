@@ -10,6 +10,7 @@ const footerLinks = [
   { label: "Reviews", path: "/reviews", id: "testimonials" },
   { label: "Contact", path: "/contact", id: "contact" },
   { label: "Blog", path: "/blog", id: "blog" },
+  { label: "Best Dental Clinic in Malviya Nagar", path: "/best-dental-clinic-in-malviya-nagar", id: "best-clinic" },
 ];
 
 const Footer = () => {
