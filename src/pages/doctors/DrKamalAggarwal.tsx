@@ -1,5 +1,5 @@
 import DoctorProfilePage, { DoctorProfileData } from "./DoctorProfilePage";
-import drKamal from "@/assets/dr-kamal-aggarwal.jpeg";
+import drKamal from "@/assets/dr-kamal-aggarwal.webp";
 
 const data: DoctorProfileData = {
   slug: "dr-kamal-aggarwal-dental-implant-specialist-malviya-nagar",

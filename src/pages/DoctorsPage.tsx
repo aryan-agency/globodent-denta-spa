@@ -3,10 +3,10 @@ import { WHATSAPP_LINK } from "@/lib/constants";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
 import TrustedProfiles from "@/components/TrustedProfiles";
-import drAanchal from "@/assets/dr-aanchal.png";
-import drRohit from "@/assets/dr-rohit.png";
-import drAbrar from "@/assets/dr-abrar-hussain.jpeg";
-import drKamal from "@/assets/dr-kamal-aggarwal.jpeg";
+import drAanchal from "@/assets/dr-aanchal.webp";
+import drRohit from "@/assets/dr-rohit.webp";
+import drAbrar from "@/assets/dr-abrar-hussain.webp";
+import drKamal from "@/assets/dr-kamal-aggarwal.webp";
 
 const doctors = [
   {

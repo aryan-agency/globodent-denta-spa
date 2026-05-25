@@ -7,27 +7,27 @@ import ScrollReveal from "@/components/ScrollReveal";
 import TrustedProfiles from "@/components/TrustedProfiles";
 import { servicePages } from "@/pages/services/serviceData";
 
-import serviceImplants from "@/assets/service-implants-real.jpg";
-import serviceAligners from "@/assets/service-aligners-real.jpg";
-import serviceFullmouth from "@/assets/service-fullmouth-real.jpg";
-import serviceRct from "@/assets/service-rct-real.png";
-import serviceCosmetic from "@/assets/service-cosmetic-real.jpg";
-import serviceWhitening from "@/assets/service-whitening-new.jpg";
-import serviceCrown from "@/assets/service-crown.jpg";
-import serviceSmile from "@/assets/service-smile-real.jpg";
-import serviceMetalbraces from "@/assets/service-metalbraces-real.png";
-import serviceCeramic from "@/assets/service-ceramic-real.jpg";
-import serviceExtraction from "@/assets/service-extraction-real.jpg";
-import serviceVeneers from "@/assets/service-veneers.jpg";
-import serviceDentures from "@/assets/service-dentures.jpg";
-import serviceCleaning from "@/assets/service-cleaning.jpg";
-import serviceXray from "@/assets/service-xray.jpg";
-import serviceGum from "@/assets/service-gum.jpg";
-import servicePerio from "@/assets/service-perio.jpg";
-import serviceImplantDenture from "@/assets/service-implant-denture.jpg";
-import serviceFilling from "@/assets/service-filling.jpg";
-import serviceSurgery from "@/assets/service-surgery-real.jpg";
-import servicePostcore from "@/assets/service-postcore-real.jpg";
+import serviceImplants from "@/assets/service-implants-real.webp";
+import serviceAligners from "@/assets/service-aligners-real.webp";
+import serviceFullmouth from "@/assets/service-fullmouth-real.webp";
+import serviceRct from "@/assets/service-rct-real.webp";
+import serviceCosmetic from "@/assets/service-cosmetic-real.webp";
+import serviceWhitening from "@/assets/service-whitening-new.webp";
+import serviceCrown from "@/assets/service-crown.webp";
+import serviceSmile from "@/assets/service-smile-real.webp";
+import serviceMetalbraces from "@/assets/service-metalbraces-real.webp";
+import serviceCeramic from "@/assets/service-ceramic-real.webp";
+import serviceExtraction from "@/assets/service-extraction-real.webp";
+import serviceVeneers from "@/assets/service-veneers.webp";
+import serviceDentures from "@/assets/service-dentures.webp";
+import serviceCleaning from "@/assets/service-cleaning.webp";
+import serviceXray from "@/assets/service-xray.webp";
+import serviceGum from "@/assets/service-gum.webp";
+import servicePerio from "@/assets/service-perio.webp";
+import serviceImplantDenture from "@/assets/service-implant-denture.webp";
+import serviceFilling from "@/assets/service-filling.webp";
+import serviceSurgery from "@/assets/service-surgery-real.webp";
+import servicePostcore from "@/assets/service-postcore-real.webp";
 
 const serviceSlugMap: Record<string, string> = {
   "Single Sitting RCT": "root-canal-treatment-in-malviya-nagar",

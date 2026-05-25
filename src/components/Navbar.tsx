@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "@/assets/logo-new.png";
+import logo from "@/assets/logo-new.webp";
 import { WHATSAPP_LINK, PHONE_LINK } from "@/lib/constants";
 import useScrollSpy from "@/hooks/useScrollSpy";
 
