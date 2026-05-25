@@ -515,6 +515,22 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* ══ BEST CLINIC CALLOUT ══ */}
+      <section className="section-padding bg-card border-t border-border">
+        <div className="container mx-auto max-w-3xl text-center">
+          <h2 className="text-2xl md:text-4xl font-heading mb-4">Best Dental Clinic in Malviya Nagar</h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Looking for the best dental clinic in Malviya Nagar? Globodent Dental Spa offers specialist dental care in a premium, stress-free environment. Trusted by thousands of patients across South Delhi.
+          </p>
+          <Link
+            to="/best-dental-clinic-in-malviya-nagar"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+          >
+            Learn More About Our Malviya Nagar Clinic <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+      </section>
     </>
   );
 };
