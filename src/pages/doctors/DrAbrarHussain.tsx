@@ -1,5 +1,5 @@
 import DoctorProfilePage, { DoctorProfileData } from "./DoctorProfilePage";
-import drAbrar from "@/assets/dr-abrar-hussain.jpeg";
+import drAbrar from "@/assets/dr-abrar-hussain.webp";
 
 const data: DoctorProfileData = {
   slug: "dr-abrar-hussain-orthodontist-malviya-nagar",

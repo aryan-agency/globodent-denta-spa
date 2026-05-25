@@ -1,13 +1,13 @@
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import clinic1 from "@/assets/clinic-1.png";
-import clinic2 from "@/assets/clinic-2.png";
-import clinic3 from "@/assets/clinic-3.png";
-import clinic4 from "@/assets/clinic-4.png";
-import clinic5 from "@/assets/clinic-5.png";
-import clinic6 from "@/assets/clinic-6.png";
-import clinic7 from "@/assets/clinic-7.png";
+import clinic1 from "@/assets/clinic-1.webp";
+import clinic2 from "@/assets/clinic-2.webp";
+import clinic3 from "@/assets/clinic-3.webp";
+import clinic4 from "@/assets/clinic-4.webp";
+import clinic5 from "@/assets/clinic-5.webp";
+import clinic6 from "@/assets/clinic-6.webp";
+import clinic7 from "@/assets/clinic-7.webp";
 
 const images = [clinic1, clinic2, clinic3, clinic4, clinic5, clinic6, clinic7];
 

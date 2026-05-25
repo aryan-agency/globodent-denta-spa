@@ -1,13 +1,13 @@
 import type { ServicePageData } from "./ServiceDetailPage";
 
-import serviceRct from "@/assets/service-rct-real.png";
-import serviceImplants from "@/assets/service-implants-real.jpg";
-import serviceWhitening from "@/assets/service-whitening-new.jpg";
-import serviceMetalbraces from "@/assets/service-metalbraces-real.png";
-import serviceExtraction from "@/assets/service-extraction-real.jpg";
-import serviceCleaning from "@/assets/service-cleaning.jpg";
-import serviceCosmetic from "@/assets/service-cosmetic-real.jpg";
-import serviceFullmouth from "@/assets/service-fullmouth-real.jpg";
+import serviceRct from "@/assets/service-rct-real.webp";
+import serviceImplants from "@/assets/service-implants-real.webp";
+import serviceWhitening from "@/assets/service-whitening-new.webp";
+import serviceMetalbraces from "@/assets/service-metalbraces-real.webp";
+import serviceExtraction from "@/assets/service-extraction-real.webp";
+import serviceCleaning from "@/assets/service-cleaning.webp";
+import serviceCosmetic from "@/assets/service-cosmetic-real.webp";
+import serviceFullmouth from "@/assets/service-fullmouth-real.webp";
 
 const allSlugs = [
   { name: "Root Canal Treatment", slug: "root-canal-treatment-in-malviya-nagar" },
