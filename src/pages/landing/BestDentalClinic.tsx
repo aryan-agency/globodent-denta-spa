@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, MessageCircle, Award, Sparkles, ShieldCheck, HeartPulse, Star, CheckCircle2, Stethoscope } from "lucide-react";
+import { Phone, MessageCircle, Award, Sparkles, ShieldCheck, HeartPulse, CheckCircle2, Stethoscope } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import TrustedProfiles from "@/components/TrustedProfiles";
 import ScrollReveal from "@/components/ScrollReveal";
