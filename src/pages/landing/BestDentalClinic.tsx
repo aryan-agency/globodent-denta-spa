@@ -84,13 +84,13 @@ const BestDentalClinic = () => (
     <section className="relative pt-28 md:pt-32 pb-12 bg-gradient-to-br from-spa-blue-light via-background to-background">
       <div className="container mx-auto px-4 text-center max-w-4xl">
         <span className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4">
-          <Award className="h-4 w-4" /> Award-Winning Dental Care
+          <Award className="h-4 w-4" /> 4.9★ Rated on Google · 70+ Reviews
         </span>
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4">
           Best Dental Clinic in Malviya Nagar
         </h1>
         <p className="text-base md:text-lg text-muted-foreground mb-6">
-          Globodent Dental Spa® is South Delhi's most trusted destination for premium, painless and specialist-led dentistry. Experience world-class treatment in a luxurious spa setting.
+          Globodent Dental Spa is Malviya Nagar's specialist dental clinic offering painless dental implants, root canal treatment, cosmetic dentistry, and smile makeovers in South Delhi. Led by Dr. Rohit Bansal, BDS, MDS, with 15+ years of experience and 10,000+ patients treated.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Button asChild size="lg" className="gap-2">
@@ -100,6 +100,9 @@ const BestDentalClinic = () => (
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer"><MessageCircle className="h-5 w-5" /> WhatsApp Us</a>
           </Button>
         </div>
+        <p className="text-sm text-muted-foreground mt-4">
+          Serving patients from Malviya Nagar, Hauz Khas, Panchsheel Park, Saket and South Delhi
+        </p>
       </div>
     </section>
 
