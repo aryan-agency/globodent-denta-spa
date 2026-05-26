@@ -29,6 +29,7 @@ import TrustedClinic from "./pages/widgets/TrustedClinic";
 import DrAbrarHussain from "./pages/doctors/DrAbrarHussain";
 import DrKamalAggarwal from "./pages/doctors/DrKamalAggarwal";
 import ScrollToTop from "./components/ScrollToTop";
+import PreFooterCTA from "./components/PreFooterCTA";
 
 const queryClient = new QueryClient();
 
@@ -66,6 +67,7 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
+          <PreFooterCTA />
           <Footer />
           <FloatingButtons />
         </BrowserRouter>
