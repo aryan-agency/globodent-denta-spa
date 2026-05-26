@@ -178,30 +178,10 @@ const BestDentalClinic = () => (
       </div>
     </section>
 
-    <section className="py-16 bg-background">
-      <div className="container mx-auto px-4">
-        <ScrollReveal>
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-center mb-10">What Our Patients Say</h2>
-        </ScrollReveal>
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {testimonials.map(t => (
-            <Card key={t.name}>
-              <CardContent className="p-6">
-                <div className="flex gap-1 mb-3">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-primary text-primary" />)}
-                </div>
-                <p className="text-sm text-muted-foreground italic mb-4">"{t.text}"</p>
-                <p className="font-semibold text-sm">{t.name}</p>
-                <p className="text-xs text-muted-foreground">{t.area}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-        <div className="text-center mt-8">
-          <Button asChild variant="outline"><Link to="/reviews">Read More Reviews</Link></Button>
-        </div>
-      </div>
-    </section>
+    <GoogleReviewsCarousel />
+    <div className="text-center -mt-8 mb-12">
+      <Button asChild variant="outline"><Link to="/reviews">Read More Reviews</Link></Button>
+    </div>
 
     <section className="py-16 bg-spa-blue-light/30">
       <div className="container mx-auto px-4 max-w-4xl">
