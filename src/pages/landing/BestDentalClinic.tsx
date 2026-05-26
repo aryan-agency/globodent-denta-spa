@@ -8,6 +8,26 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { WHATSAPP_LINK, PHONE_LINK, PHONE_NUMBER } from "@/lib/constants";
 import { buildLocalBusinessSchema } from "@/lib/localBusinessSchema";
+import GoogleReviewsCarousel, { googleReviews } from "@/components/GoogleReviewsCarousel";
+
+const reviewsSchema = {
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  name: "Globodent Dental Spa — Best Dental Clinic in Malviya Nagar",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "500",
+    bestRating: "5",
+  },
+  review: googleReviews.map((r) => ({
+    "@type": "Review",
+    author: { "@type": "Person", name: r.name },
+    reviewRating: { "@type": "Rating", ratingValue: r.rating.toString(), bestRating: "5" },
+    reviewBody: r.text,
+    publisher: { "@type": "Organization", name: "Google" },
+  })),
+};
 
 const services = [
   { name: "Root Canal Treatment", slug: "root-canal-treatment-in-malviya-nagar" },
