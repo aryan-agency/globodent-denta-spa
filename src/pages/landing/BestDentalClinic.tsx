@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, MessageCircle, Award, Sparkles, ShieldCheck, HeartPulse, Star, CheckCircle2, Stethoscope } from "lucide-react";
+import { Phone, MessageCircle, Award, Sparkles, ShieldCheck, HeartPulse, CheckCircle2, Stethoscope } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import TrustedProfiles from "@/components/TrustedProfiles";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -8,6 +8,26 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { WHATSAPP_LINK, PHONE_LINK, PHONE_NUMBER } from "@/lib/constants";
 import { buildLocalBusinessSchema } from "@/lib/localBusinessSchema";
+import GoogleReviewsCarousel, { googleReviews } from "@/components/GoogleReviewsCarousel";
+
+const reviewsSchema = {
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  name: "Globodent Dental Spa — Best Dental Clinic in Malviya Nagar",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "500",
+    bestRating: "5",
+  },
+  review: googleReviews.map((r) => ({
+    "@type": "Review",
+    author: { "@type": "Person", name: r.name },
+    reviewRating: { "@type": "Rating", ratingValue: r.rating.toString(), bestRating: "5" },
+    reviewBody: r.text,
+    publisher: { "@type": "Organization", name: "Google" },
+  })),
+};
 
 const services = [
   { name: "Root Canal Treatment", slug: "root-canal-treatment-in-malviya-nagar" },
@@ -27,11 +47,6 @@ const reasons = [
   { Icon: CheckCircle2, title: "Transparent Pricing", text: "Honest, upfront treatment plans with no hidden costs and flexible payment options." },
 ];
 
-const testimonials = [
-  { name: "Priya Sharma", area: "Malviya Nagar", text: "Hands down the best dental clinic in Malviya Nagar. Dr. Bansal explained every step and my root canal was completely painless." },
-  { name: "Rahul Verma", area: "Saket", text: "Premium experience from start to finish. The clinic feels like a luxury spa and the results of my smile makeover are stunning." },
-  { name: "Anjali Mehra", area: "Hauz Khas", text: "Got my dental implants done here. Professional team, latest technology and genuine care. Highly recommend Globodent." },
-];
 
 const faqs = [
   { q: "What makes Globodent the best dental clinic in Malviya Nagar?", a: "Globodent Dental Spa combines specialist-led treatment, advanced technology, painless techniques and a spa-like ambience. With 15+ years of experience and thousands of 5-star reviews, we are consistently rated among the top dental clinics in Malviya Nagar and South Delhi." },
@@ -63,7 +78,7 @@ const BestDentalClinic = () => (
       description="Looking for the best dental clinic in Malviya Nagar? Globodent Dental Spa offers world-class dental care in a relaxing spa environment. Call now."
       canonical="/best-dental-clinic-in-malviya-nagar"
       ogType="website"
-      jsonLd={[localBusinessSchema, faqSchema]}
+      jsonLd={[localBusinessSchema, faqSchema, reviewsSchema]}
     />
 
     <section className="relative pt-28 md:pt-32 pb-12 bg-gradient-to-br from-spa-blue-light via-background to-background">
@@ -158,30 +173,10 @@ const BestDentalClinic = () => (
       </div>
     </section>
 
-    <section className="py-16 bg-background">
-      <div className="container mx-auto px-4">
-        <ScrollReveal>
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-center mb-10">What Our Patients Say</h2>
-        </ScrollReveal>
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {testimonials.map(t => (
-            <Card key={t.name}>
-              <CardContent className="p-6">
-                <div className="flex gap-1 mb-3">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-primary text-primary" />)}
-                </div>
-                <p className="text-sm text-muted-foreground italic mb-4">"{t.text}"</p>
-                <p className="font-semibold text-sm">{t.name}</p>
-                <p className="text-xs text-muted-foreground">{t.area}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-        <div className="text-center mt-8">
-          <Button asChild variant="outline"><Link to="/reviews">Read More Reviews</Link></Button>
-        </div>
-      </div>
-    </section>
+    <GoogleReviewsCarousel />
+    <div className="text-center -mt-8 mb-12">
+      <Button asChild variant="outline"><Link to="/reviews">Read More Reviews</Link></Button>
+    </div>
 
     <section className="py-16 bg-spa-blue-light/30">
       <div className="container mx-auto px-4 max-w-4xl">
