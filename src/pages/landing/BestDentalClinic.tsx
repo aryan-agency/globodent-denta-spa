@@ -83,7 +83,7 @@ const BestDentalClinic = () => (
       description="Looking for the best dental clinic in Malviya Nagar? Globodent Dental Spa offers world-class dental care in a relaxing spa environment. Call now."
       canonical="/best-dental-clinic-in-malviya-nagar"
       ogType="website"
-      jsonLd={[localBusinessSchema, faqSchema]}
+      jsonLd={[localBusinessSchema, faqSchema, reviewsSchema]}
     />
 
     <section className="relative pt-28 md:pt-32 pb-12 bg-gradient-to-br from-spa-blue-light via-background to-background">
