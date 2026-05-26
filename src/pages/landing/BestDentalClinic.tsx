@@ -47,11 +47,6 @@ const reasons = [
   { Icon: CheckCircle2, title: "Transparent Pricing", text: "Honest, upfront treatment plans with no hidden costs and flexible payment options." },
 ];
 
-const testimonials = [
-  { name: "Priya Sharma", area: "Malviya Nagar", text: "Hands down the best dental clinic in Malviya Nagar. Dr. Bansal explained every step and my root canal was completely painless." },
-  { name: "Rahul Verma", area: "Saket", text: "Premium experience from start to finish. The clinic feels like a luxury spa and the results of my smile makeover are stunning." },
-  { name: "Anjali Mehra", area: "Hauz Khas", text: "Got my dental implants done here. Professional team, latest technology and genuine care. Highly recommend Globodent." },
-];
 
 const faqs = [
   { q: "What makes Globodent the best dental clinic in Malviya Nagar?", a: "Globodent Dental Spa combines specialist-led treatment, advanced technology, painless techniques and a spa-like ambience. With 15+ years of experience and thousands of 5-star reviews, we are consistently rated among the top dental clinics in Malviya Nagar and South Delhi." },
