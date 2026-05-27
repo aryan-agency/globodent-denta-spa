@@ -136,6 +136,9 @@ const BestDentalClinic = () => (
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4">
           Best Dental Clinic in Malviya Nagar
         </h1>
+        <p className="text-sm md:text-base text-primary font-semibold mb-3">
+          15+ Years of Excellence · 10,000+ Happy Patients Treated · 4 Specialist Doctors
+        </p>
         <p className="text-base md:text-lg text-muted-foreground mb-6">
           Globodent Dental Spa is Malviya Nagar's specialist dental clinic offering painless dental implants, root canal treatment, cosmetic dentistry, and smile makeovers in South Delhi. Led by Dr. Rohit Bansal, BDS, MDS, with 15+ years of experience and 10,000+ patients treated.
         </p>
