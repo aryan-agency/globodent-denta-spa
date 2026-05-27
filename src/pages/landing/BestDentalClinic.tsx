@@ -215,14 +215,48 @@ const BestDentalClinic = () => (
     </section>
 
     <section className="py-16 bg-spa-blue-light/30">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-6xl">
         <ScrollReveal>
-          <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Meet Our Lead Specialist</h2>
-          <p className="text-muted-foreground mb-6">
-            <strong className="text-foreground">Dr. Rohit Bansal</strong> — Founder of Globodent Dental Spa, an internationally trained implantologist and cosmetic dentist with 15+ years of clinical excellence. Known across Malviya Nagar for combining surgical precision with an artist's eye for aesthetics, Dr. Bansal leads a team of dedicated endodontists, orthodontists and prosthodontists.
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-center mb-3">Meet Our Specialist Doctors</h2>
+          <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-10">
+            A team of four BDS, MDS specialists with combined experience of 50+ years and 17,000+ patients treated at the best dental clinic in Malviya Nagar.
           </p>
-          <Button asChild><Link to="/doctors">View All Doctors</Link></Button>
         </ScrollReveal>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {credentials.map((doc) => (
+            <Card key={doc.name} className="overflow-hidden hover:shadow-xl transition-shadow flex flex-col">
+              <img
+                src={doc.img}
+                alt={`${doc.name} — ${doc.specialisation} at the best dental clinic in Malviya Nagar, South Delhi`}
+                loading="lazy"
+                className="w-full aspect-[4/3] object-cover object-top"
+              />
+              <CardContent className="p-5 flex-1 flex flex-col">
+                <h3 className="font-heading text-lg font-semibold">{doc.name}</h3>
+                <p className="text-xs text-muted-foreground mb-1">{doc.degree}</p>
+                <p className="text-primary text-sm font-medium mb-4">{doc.specialisation}</p>
+                <div className="grid grid-cols-2 gap-2 mb-4">
+                  <div className="bg-spa-blue-light/60 rounded-lg p-2 text-center">
+                    <div className="text-base font-bold text-primary">{doc.years}</div>
+                    <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Experience</div>
+                  </div>
+                  <div className="bg-spa-blue-light/60 rounded-lg p-2 text-center">
+                    <div className="text-base font-bold text-primary">{doc.patients}</div>
+                    <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Treated</div>
+                  </div>
+                </div>
+                <p className="text-xs text-foreground/70 mb-3 flex items-start gap-1.5">
+                  <Award className="h-3.5 w-3.5 text-gold shrink-0 mt-0.5" />
+                  <span>{doc.awards}</span>
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed mt-auto">{doc.bio}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        <div className="text-center mt-8">
+          <Button asChild><Link to="/doctors">View Full Doctor Profiles</Link></Button>
+        </div>
       </div>
     </section>
 
