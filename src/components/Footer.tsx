@@ -89,7 +89,7 @@ const Footer = () => {
               href="https://aryansrivastav.in"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[hsl(209_85%_60%)] hover:opacity-80"
+              className="text-[hsl(209_85%_60%)] underline hover:opacity-80"
             >
               Aryan Srivastav
             </a>
