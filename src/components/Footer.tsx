@@ -74,24 +74,22 @@ const Footer = () => {
         </div>
         <div className="mt-12 pt-6 border-t border-primary-foreground/10 text-center text-xs space-y-2">
           <p>© {new Date().getFullYear()} Globodent Dental Spa<sup className="text-[0.6em]">®</sup>. All rights reserved. | Best Dental Clinic in Malviya Nagar, New Delhi</p>
-          <p>
-            Made by{" "}
+          <p className="text-primary-foreground/70">
+            Website designed &amp; developed by{" "}
+            <Link
+              to="/about-aryan-srivastav"
+              className="text-[hsl(209_85%_60%)] underline hover:opacity-80"
+            >
+              Aryan Srivastav
+            </Link>{" "}
+            – Founder of{" "}
             <a
               href="https://theariseai.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[hsl(209_85%_60%)] underline hover:opacity-80"
             >
-              Arise Ai
-            </a>{" "}
-            I{" "}
-            <a
-              href="https://aryansrivastav.in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[hsl(209_85%_60%)] underline hover:opacity-80"
-            >
-              Aryan Srivastav
+              ARISE AI
             </a>
           </p>
         </div>
