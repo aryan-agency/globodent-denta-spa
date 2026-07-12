@@ -1,5 +1,7 @@
 import { MapPin, Phone, Clock } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _linkImport = Link;
 import { CLINIC_ADDRESS, PHONE_NUMBER, PHONE_LINK, CLINIC_HOURS, WHATSAPP_LINK } from "@/lib/constants";
 
 const footerLinks = [

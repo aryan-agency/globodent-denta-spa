@@ -28,6 +28,7 @@ import AffordableTreatment from "./pages/widgets/AffordableTreatment";
 import TrustedClinic from "./pages/widgets/TrustedClinic";
 import DrAbrarHussain from "./pages/doctors/DrAbrarHussain";
 import DrKamalAggarwal from "./pages/doctors/DrKamalAggarwal";
+import AboutAryanSrivastav from "./pages/AboutAryanSrivastav";
 import ScrollToTop from "./components/ScrollToTop";
 import PreFooterCTA from "./components/PreFooterCTA";
 
@@ -64,6 +65,7 @@ const App = () => (
               <Route path="/trusted-dental-clinic-south-delhi" element={<TrustedClinic />} />
               <Route path="/doctors/dr-abrar-hussain-orthodontist-malviya-nagar" element={<DrAbrarHussain />} />
               <Route path="/doctors/dr-kamal-aggarwal-dental-implant-specialist-malviya-nagar" element={<DrKamalAggarwal />} />
+              <Route path="/about-aryan-srivastav" element={<AboutAryanSrivastav />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
