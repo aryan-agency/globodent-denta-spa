@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
-import founderImg from "@/assets/aryan-srivastav-founder-arise-ai.jpg";
+import founderImg from "@/assets/aryan-srivastav-founder-arise-ai.webp.asset.json";
 
 const ARYAN_URL = "https://aryansrivastav.in";
 const ARISE_URL = "https://theariseai.com";
