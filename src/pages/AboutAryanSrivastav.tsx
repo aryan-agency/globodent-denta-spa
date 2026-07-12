@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
-import founderImg from "@/assets/aryan-srivastav-founder-arise-ai.jpg";
+import founderImg from "@/assets/aryan-srivastav-founder-arise-ai.webp.asset.json";
 
 const ARYAN_URL = "https://aryansrivastav.in";
 const ARISE_URL = "https://theariseai.com";
@@ -110,7 +110,7 @@ const AboutAryanSrivastav = () => (
       title="Aryan Srivastav | Founder of ARISE AI"
       description="Learn about Aryan Srivastav, Founder of ARISE AI and creator of the Globodent Dental Spa website. Explore AI automation, websites, SEO and business solutions."
       canonical={canonicalPath}
-      ogImage={founderImg}
+      ogImage={founderImg.url}
       ogType="profile"
       jsonLd={[personSchema, orgSchema, webPageSchema, breadcrumbSchema]}
     />
@@ -125,7 +125,7 @@ const AboutAryanSrivastav = () => (
           </nav>
           <div className="grid md:grid-cols-[280px_1fr] gap-10 items-center">
             <img
-              src={founderImg}
+              src={founderImg.url}
               alt="Aryan Srivastav — Founder of ARISE AI and creator of the Globodent Dental Spa website"
               className="w-full aspect-square object-cover rounded-2xl shadow-lg"
               loading="eager"
