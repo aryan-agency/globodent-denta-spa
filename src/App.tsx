@@ -68,7 +68,11 @@ const App = () => (
               <Route path="/doctors/dr-abrar-hussain-orthodontist-malviya-nagar" element={<DrAbrarHussain />} />
               <Route path="/doctors/dr-kamal-aggarwal-dental-implant-specialist-malviya-nagar" element={<DrKamalAggarwal />} />
               <Route path="/about-aryan-srivastav" element={<AboutAryanSrivastav />} />
+              {bestServices.map((s) => (
+                <Route key={s.slug} path={`/${s.slug}`} element={<BestServicePage />} />
+              ))}
               <Route path="*" element={<NotFound />} />
+
             </Routes>
           </main>
           <PreFooterCTA />
