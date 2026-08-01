@@ -31,6 +31,8 @@ import DrKamalAggarwal from "./pages/doctors/DrKamalAggarwal";
 import AboutAryanSrivastav from "./pages/AboutAryanSrivastav";
 import ScrollToTop from "./components/ScrollToTop";
 import PreFooterCTA from "./components/PreFooterCTA";
+import BestServicePage from "./pages/best/BestServicePage";
+import { bestServices } from "./pages/best/bestServiceData";
 
 const queryClient = new QueryClient();
 
