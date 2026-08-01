@@ -76,12 +76,14 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} Globodent Dental Spa<sup className="text-[0.6em]">®</sup>. All rights reserved. | Best Dental Clinic in Malviya Nagar, New Delhi</p>
           <p className="text-primary-foreground/70">
             Website designed &amp; developed by{" "}
-            <Link
-              to="/about-aryan-srivastav"
+            <a
+              href="https://aryansrivastav.in"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[hsl(209_85%_60%)] underline hover:opacity-80"
             >
               Aryan Srivastav
-            </Link>{" "}
+            </a>{" "}
             – Founder of{" "}
             <a
               href="https://theariseai.com"
