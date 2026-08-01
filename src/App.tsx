@@ -31,6 +31,8 @@ import DrKamalAggarwal from "./pages/doctors/DrKamalAggarwal";
 import AboutAryanSrivastav from "./pages/AboutAryanSrivastav";
 import ScrollToTop from "./components/ScrollToTop";
 import PreFooterCTA from "./components/PreFooterCTA";
+import BestServicePage from "./pages/best/BestServicePage";
+import { bestServices } from "./pages/best/bestServiceData";
 
 const queryClient = new QueryClient();
 
@@ -66,7 +68,11 @@ const App = () => (
               <Route path="/doctors/dr-abrar-hussain-orthodontist-malviya-nagar" element={<DrAbrarHussain />} />
               <Route path="/doctors/dr-kamal-aggarwal-dental-implant-specialist-malviya-nagar" element={<DrKamalAggarwal />} />
               <Route path="/about-aryan-srivastav" element={<AboutAryanSrivastav />} />
+              {bestServices.map((s) => (
+                <Route key={s.slug} path={`/${s.slug}`} element={<BestServicePage slug={s.slug} />} />
+              ))}
               <Route path="*" element={<NotFound />} />
+
             </Routes>
           </main>
           <PreFooterCTA />
