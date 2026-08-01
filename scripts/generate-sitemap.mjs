@@ -29,6 +29,12 @@ const serviceSlugs = uniq(
   ),
 );
 
+// --- "Best <service> in Malviya Nagar" landing pages ------------------
+const bestData = read("src/pages/best/bestServiceData.ts");
+const bestRoutes = uniq(
+  [...bestData.matchAll(/"(best-[a-z0-9-]+-in-malviya-nagar)",/g)].map((m) => `/${m[1]}`),
+);
+
 // --- Dynamic blog slugs (from blogData.ts) -------------------------------
 const blogData = read("src/pages/blog/blogData.ts");
 const blogSlugs = uniq([
@@ -48,6 +54,7 @@ const freqFor = (path) =>
 
 const entries = uniq([
   ...staticRoutes,
+  ...bestRoutes,
   ...serviceSlugs.map((s) => `/services/${s}`),
   ...blogSlugs.map((s) => `/blog/${s}`),
 ]).sort();

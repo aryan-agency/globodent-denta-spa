@@ -1,4 +1,4 @@
-import { Link, useParams, Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { Phone, Calendar, ArrowRight, MapPin } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
@@ -8,9 +8,8 @@ import { bestServiceBySlug } from "./bestServiceData";
 
 const BASE_URL = "https://globodentdentalspa.com";
 
-const BestServicePage = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const data = slug ? bestServiceBySlug[slug] : undefined;
+const BestServicePage = ({ slug }: { slug: string }) => {
+  const data = bestServiceBySlug[slug];
 
   if (!data) return <Navigate to="/services" replace />;
 
