@@ -1,7 +1,7 @@
 import type { BestServiceContent } from "./types";
 
 // Auto-register every content file in this folder (one per landing page slug).
-const modules = import.meta.glob<{ default: BestServiceContent }>("./*.ts", { eager: true });
+const modules = import.meta.glob<{ default: BestServiceContent }>("./best-*.ts", { eager: true });
 
 export const bestContentBySlug: Record<string, BestServiceContent> = Object.entries(modules).reduce(
   (acc, [path, mod]) => {
