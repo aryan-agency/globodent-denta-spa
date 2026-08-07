@@ -1,0 +1,80 @@
+import type { BestServiceContent } from "./types";
+
+const content: BestServiceContent = {
+  slug: "best-teeth-whitening-in-malviya-nagar",
+  about: [
+    "Teeth whitening is a cosmetic dental treatment that lightens the natural shade of your teeth by breaking down surface and deep stains using safe bleaching agents. Over the years, tea, coffee, tobacco, certain medicines and simply ageing dull the enamel, leaving teeth looking yellow or grey even when they are otherwise healthy. If you have been searching for the best teeth whitening in Malviya Nagar, it helps to know that professional whitening is far more predictable and gentler on enamel than home kits bought off a pharmacy shelf.",
+    "Almost anyone with healthy gums and no untreated cavities is a candidate for whitening, though the degree of brightening varies from person to person depending on the original tooth colour and the type of staining involved. People preparing for a wedding, an interview, or simply wanting a fresher smile for daily confidence often choose teeth whitening in Malviya Nagar as a quick, non-invasive upgrade. It is not a permanent fix, but with sensible aftercare the results can last a long time.",
+    "Why it matters goes beyond looks. Stained teeth can sometimes hide plaque build-up that is harder to spot, and patients who feel self-conscious about their smile tend to smile less and speak with their hand near their mouth, which affects confidence in social and professional settings. A clean, even shade also motivates better home care because the improvement becomes visible and worth protecting.",
+    "Whitening is usually recommended once any active decay, gum disease or old discoloured fillings on front teeth have been addressed, since bleaching only works on natural tooth structure and not on crowns or composite fillings. A dentist for teeth whitening in South Delhi will always start with a check-up to rule out sensitivity issues or cracks that bleaching gels could aggravate.",
+    "On oral health, professional whitening itself does not damage enamel when done correctly and monitored by a dentist, unlike unsupervised repeated use of whitening strips or abrasive home remedies. The real benefit is that it is done under supervision, with concentration and exposure time controlled, so the outcome is safer and more even than DIY options readily marketed online.",
+  ],
+  benefits: [
+    { title: "Visibly brighter shade in one sitting", text: "In-chair whitening can lift the tooth shade by several levels within a single 45-60 minute appointment, giving an immediate, noticeable result compared to weeks of home gel use." },
+    { title: "Even, natural-looking results", text: "A dentist controls gel concentration and application across each tooth, avoiding the patchy or uneven whitening that often happens with over-the-counter trays that do not fit properly." },
+    { title: "Safer for gums and enamel", text: "Professional protective barriers shield the gums from the bleaching agent, reducing the irritation and chemical burns sometimes seen with poorly fitted home whitening kits." },
+    { title: "Boosts everyday confidence", text: "A brighter smile often changes how comfortable people feel in photos, meetings and conversations, making it one of the simplest confidence upgrades in dentistry." },
+    { title: "Non-invasive and reversible", text: "Unlike veneers or crowns, whitening does not remove any tooth structure, so it carries minimal risk while still delivering a meaningful cosmetic change." },
+    { title: "Customised to your goals", text: "Whether you want a subtle two-shade lift or a noticeably whiter smile, the treatment plan and number of sessions can be tailored to your comfort and expectations." },
+    { title: "Complements other dental work", text: "Whitening before getting new crowns, veneers or bonding lets the dentist match restorations to your brightest achievable shade for a uniform smile." },
+    { title: "Quick turnaround for events", text: "Many patients book a session shortly before weddings, interviews or family functions because results are visible almost immediately, unlike slower home treatments." },
+    { title: "Guided aftercare reduces relapse", text: "Your dentist will advise on foods, drinks and habits to avoid in the first 48 hours, helping the new shade stay stable for much longer." },
+  ],
+  signsIntro: "You may be a good candidate for professional whitening if you notice any of the following:",
+  signs: [
+    "Teeth look yellow, grey or dull compared to how they used to be",
+    "Visible staining from years of tea, coffee, red wine or tobacco use",
+    "Uneven tooth colour after braces removal or long-term plaque build-up",
+    "Self-consciousness about smiling in photographs or during conversations",
+    "Whitening toothpaste and strips from the market have stopped making a difference",
+    "Upcoming wedding, event or professional occasion where you want a fresher smile",
+    "Old discoloured fillings or stains that home remedies have not resolved",
+  ],
+  process: [
+    { title: "Initial consultation and shade check", text: "The dentist examines your teeth and gums, records your current shade using a shade guide, and discusses your desired outcome and any past sensitivity issues." },
+    { title: "Cleaning before whitening", text: "A professional scaling is done first if there is plaque or tartar, since whitening gel works best on a clean tooth surface without surface debris in the way." },
+    { title: "Gum and lip protection", text: "A protective barrier or gel is applied along the gumline to shield soft tissue from the bleaching agent before the whitening gel is applied to teeth." },
+    { title: "Application of whitening gel", text: "A carefully measured bleaching gel is applied to the front surfaces of the teeth and may be activated with a special light, depending on the system used." },
+    { title: "Timed sessions with checks", text: "The gel is left on for measured intervals, reapplied as needed, and the dentist checks shade progress between cycles to avoid over-bleaching." },
+    { title: "Final rinse and sensitivity care", text: "Once the desired shade is reached, the gel is thoroughly rinsed off and a desensitising or fluoride application may be used to soothe the teeth." },
+    { title: "Aftercare guidance", text: "You receive clear instructions on avoiding staining foods and drinks for the first day or two so the new brighter shade settles well." },
+  ],
+  whyGlobodent: [
+    { title: "Specialist-led evaluation", text: "Every whitening case at Globodent Dental Spa begins with an examination by experienced dentists who check for cavities or sensitivity before starting any bleaching procedure." },
+    { title: "Controlled, monitored technique", text: "Rather than a one-size-fits-all approach, the whitening concentration and exposure time are adjusted to your enamel condition and comfort level." },
+    { title: "4.9-star rated clinic in Malviya Nagar", text: "Patients across South Delhi consistently rate the clinic highly for careful, comfortable treatment, which is why many search specifically for the best teeth whitening in Malviya Nagar here." },
+    { title: "15+ years of clinical experience", text: "The team's long-standing experience with cosmetic procedures means fewer surprises, more predictable shade outcomes and better handling of sensitive teeth." },
+    { title: "Modern, hygienic setup", text: "The clinic follows strict sterilisation protocols and uses updated whitening systems, so you get a clean, professional experience from start to finish." },
+    { title: "Honest shade expectations", text: "Dentists here explain realistically what shade improvement is achievable for your teeth rather than over-promising results that bleaching cannot deliver." },
+    { title: "Convenient Malviya Nagar location", text: "Easily reachable from Saket, Hauz Khas and Panchsheel Park, the clinic makes it simple to fit a whitening appointment into a busy South Delhi schedule." },
+  ],
+  whyPatients: [
+    "Trusted specialist dentists with over 15 years of combined experience",
+    "4.9-star Google rating from patients across South Delhi",
+    "Transparent discussion of achievable results before treatment begins",
+    "Comfortable, modern clinic with strict hygiene standards",
+    "Personalised aftercare advice to help results last longer",
+  ],
+  areas: [
+    "Globodent Dental Spa is centrally located in Shivalik Enclave, Malviya Nagar, making it a convenient choice for patients looking for teeth whitening in South Delhi without long commutes across the city. Residents of Saket, Hauz Khas, Panchsheel Park and Panchsheel Enclave regularly visit for cosmetic appointments, drawn by the clinic's reputation and easy access from the Malviya Nagar and Hauz Khas metro stations.",
+    "Patients from Chirag Delhi, Greater Kailash, Sheikh Sarai, Green Park, Khirki Extension and Pushp Vihar also find the clinic a short drive away, which is why so many people searching for a dentist for teeth whitening in South Delhi near Malviya Nagar end up choosing Globodent Dental Spa for both convenience and quality of care.",
+  ],
+  faqs: [
+    { q: "How long does professional teeth whitening take?", a: "A typical in-chair session at the clinic takes around 45 to 60 minutes, though this can vary depending on how many shades of improvement you are aiming for and your teeth's response to the gel." },
+    { q: "Is teeth whitening safe for enamel?", a: "Yes, when performed by a qualified dentist with proper concentration control and gum protection, whitening does not damage enamel. Problems usually arise from unsupervised, repeated use of unregulated home products instead." },
+    { q: "Will whitening work on crowns or fillings?", a: "No, bleaching gels only lighten natural tooth structure. Existing crowns, veneers or composite fillings on front teeth will not change colour, so these may need replacement later to match a newly whitened smile." },
+    { q: "How long do results last?", a: "With good oral hygiene and limited intake of staining foods and drinks like tea, coffee and red wine, results commonly last from several months to over a year before a touch-up may be considered." },
+    { q: "Will my teeth feel sensitive afterwards?", a: "Mild, temporary sensitivity to hot or cold is common for a day or two after whitening. Your dentist can recommend desensitising toothpaste or a fluoride application to ease this." },
+    { q: "Can I eat normally right after whitening?", a: "It is best to avoid strongly coloured foods and drinks such as tea, coffee, turmeric-based dishes and red wine for the first 24 to 48 hours, as the enamel is more porous and prone to staining right after treatment." },
+    { q: "Is in-clinic whitening better than home kits?", a: "In-clinic whitening is supervised, uses controlled gel strength, and protects your gums, generally giving faster and more even results than store-bought kits, which often fit poorly and can irritate soft tissue." },
+    { q: "Who should avoid teeth whitening?", a: "Pregnant or breastfeeding women, people with untreated cavities or gum disease, and those with very sensitive teeth are usually advised to wait or discuss alternatives with their dentist first." },
+    { q: "Can whitening fix all types of stains?", a: "Whitening works well on yellow and brown surface stains from food, drink and ageing, but certain deep grey stains from medication or trauma may need alternative cosmetic options like veneers or bonding." },
+    { q: "How often can I repeat whitening treatment?", a: "Most patients space out professional whitening sessions by six months to a year, depending on lifestyle habits and how quickly new staining builds up on their teeth." },
+  ],
+  closing: [
+    "A brighter smile is one of the simplest ways to refresh how you look and feel, and choosing a professional setting makes the process both safer and more effective than experimenting with home remedies. If you have been putting off addressing years of staining, a proper consultation is the best starting point to understand what results are realistically achievable for your teeth.",
+    "For patients across Malviya Nagar, Saket, Hauz Khas and the surrounding South Delhi neighbourhoods, Globodent Dental Spa offers experienced, specialist-led whitening care in a clean and comfortable environment. Book a consultation today to find out how a customised whitening plan can help you smile with more confidence.",
+  ],
+};
+
+export default content;

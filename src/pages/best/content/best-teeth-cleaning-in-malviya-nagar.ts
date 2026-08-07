@@ -1,0 +1,81 @@
+import type { BestServiceContent } from "./types";
+
+const content: BestServiceContent = {
+  slug: "best-teeth-cleaning-in-malviya-nagar",
+  about: [
+    "Professional teeth cleaning, also called scaling and polishing, is a dental procedure that removes hardened plaque, tartar and surface stains that a regular toothbrush cannot reach. Even with diligent brushing and flossing, minerals in saliva combine with food debris to form tartar along the gumline and between teeth, which only a dentist's instruments can safely remove. Anyone searching for the best teeth cleaning in Malviya Nagar is usually looking for relief from stained, rough or bleeding gums that home care alone has not fixed.",
+    "This treatment is recommended for almost everyone, typically every six months, but it becomes especially important for people who smoke, drink a lot of tea or coffee, wear braces, or have a history of gum disease. Teeth cleaning in Malviya Nagar is often the first step a dentist suggests before any other dental work, since a clean mouth allows accurate diagnosis of cavities and gum issues hidden under tartar.",
+    "Why it matters is simple: tartar build-up is one of the leading causes of gum inflammation, bad breath and eventually gum disease if left untreated. Left unchecked, plaque bacteria irritate the gums, causing them to bleed and recede over time, which can loosen otherwise healthy teeth. Regular cleaning interrupts this cycle before it becomes a bigger, costlier problem.",
+    "Cleaning is generally recommended twice a year for most adults, though people with active gum disease, diabetes, or heavy tartar build-up may need more frequent visits as advised by a dentist for teeth cleaning in South Delhi. Pregnant women are also encouraged to keep up with cleanings since hormonal changes can make gums more prone to inflammation.",
+    "The impact on overall oral health goes well beyond fresher breath and whiter-looking teeth. Removing tartar reduces the bacterial load in the mouth, which research increasingly links to better gum health and, in turn, better management of conditions like diabetes and cardiovascular health, making cleaning a genuinely preventive, not just cosmetic, procedure.",
+  ],
+  benefits: [
+    { title: "Removes stubborn tartar", text: "Ultrasonic scalers break down hardened tartar deposits along and below the gumline that no amount of brushing at home can dislodge on its own." },
+    { title: "Fresher breath", text: "Eliminating bacteria trapped in tartar and between teeth significantly reduces the odour-causing compounds responsible for persistent bad breath." },
+    { title: "Healthier, firmer gums", text: "Clearing irritants from around the gumline allows inflamed gums to heal, reducing redness, swelling and the tendency to bleed while brushing." },
+    { title: "Brighter, stain-free smile", text: "Polishing after scaling smooths the tooth surface and lifts surface stains from tea, coffee and tobacco, leaving teeth looking noticeably cleaner." },
+    { title: "Early detection of problems", text: "A clean mouth lets the dentist spot early cavities, cracks or gum recession that would otherwise be hidden under layers of plaque and tartar." },
+    { title: "Prevents gum disease progression", text: "Routine cleaning interrupts the build-up that leads to gingivitis and, if untreated, more serious periodontal disease affecting the bone supporting teeth." },
+    { title: "Smoother tooth surface", text: "Polishing leaves enamel smoother, which makes it slightly harder for new plaque to stick as quickly, helping you maintain hygiene between visits." },
+    { title: "Supports overall health", text: "Lower oral bacterial load has been associated with better management of systemic conditions like diabetes, making cleaning a preventive health habit." },
+    { title: "Cost-effective prevention", text: "Routine cleanings are far simpler and more affordable than treating advanced gum disease or tooth loss later caused by neglected plaque build-up." },
+  ],
+  signsIntro: "Consider booking a cleaning appointment if you notice any of these signs:",
+  signs: [
+    "Yellow or brown tartar visible near the gumline",
+    "Gums that bleed while brushing or flossing",
+    "Persistent bad breath despite regular brushing",
+    "Rough or fuzzy feeling on the back of teeth",
+    "Gums that look red, puffy or slightly receding",
+    "It has been more than six months since your last dental visit",
+    "Increased tooth sensitivity to hot, cold or sweet food",
+    "Visible staining from tea, coffee, tobacco or paan",
+  ],
+  process: [
+    { title: "Oral examination", text: "The dentist first checks your gums, teeth and any areas of tartar build-up or sensitivity to plan the cleaning approach and note any concerns." },
+    { title: "Ultrasonic scaling", text: "A vibrating ultrasonic scaler gently dislodges tartar and plaque from tooth surfaces and along the gumline using water to flush away debris." },
+    { title: "Hand scaling for detail areas", text: "Fine hand instruments are used to clean tighter spaces between teeth and around the gumline that the ultrasonic tip may not fully reach." },
+    { title: "Polishing", text: "A rotating rubber cup with mild polishing paste smooths the tooth surface, removing surface stains and giving teeth a cleaner, brighter appearance." },
+    { title: "Flossing and rinse", text: "The dentist flosses between all teeth to clear remaining debris before a thorough rinse to remove loosened plaque and polishing paste." },
+    { title: "Fluoride application if needed", text: "For patients with sensitivity or higher cavity risk, a fluoride treatment may be applied to strengthen enamel after the cleaning is complete." },
+    { title: "Home care guidance", text: "You receive practical advice on brushing technique, flossing habits and diet adjustments to maintain results until your next scheduled cleaning." },
+  ],
+  whyGlobodent: [
+    { title: "Gentle, thorough technique", text: "The team at Globodent Dental Spa uses calibrated ultrasonic instruments set to a comfortable intensity, minimising discomfort during scaling and polishing." },
+    { title: "Experienced dental team", text: "With over 15 years of combined clinical experience, the dentists here know how to handle sensitive gums and heavier tartar build-up carefully." },
+    { title: "Highly rated in Malviya Nagar", text: "A 4.9-star Google rating reflects consistent patient satisfaction, which is why many people look specifically for the best teeth cleaning in Malviya Nagar here." },
+    { title: "Combined checkup during cleaning", text: "Every cleaning visit includes an oral health check so early cavities or gum issues are flagged rather than waiting for the next scheduled visit." },
+    { title: "Strict sterilisation standards", text: "All instruments follow rigorous sterilisation protocols, ensuring a safe and hygienic experience for every cleaning appointment at the clinic." },
+    { title: "Comfortable clinic environment", text: "The calm, well-equipped setting in Shivalik Enclave helps even anxious patients feel at ease during routine dental cleaning visits." },
+    { title: "Practical aftercare advice", text: "Dentists take time to explain simple daily habits that keep tartar from building up quickly, extending the benefit of each cleaning visit." },
+  ],
+  whyPatients: [
+    "Experienced dentists with over 15 years of combined practice",
+    "4.9-star Google rating from patients across South Delhi",
+    "Gentle scaling technique suited for sensitive gums",
+    "Combined oral health check included with every cleaning",
+    "Conveniently located for patients across Malviya Nagar and nearby areas",
+  ],
+  areas: [
+    "Located in Shivalik Enclave, Malviya Nagar, Globodent Dental Spa is a convenient option for anyone in South Delhi looking for routine teeth cleaning without travelling far. Patients from Saket, Hauz Khas, Panchsheel Park and Panchsheel Enclave regularly schedule their six-monthly cleanings here, aided by easy access from the Malviya Nagar and Hauz Khas metro stations.",
+    "The clinic also welcomes patients from Chirag Delhi, Greater Kailash, Sheikh Sarai, Green Park, Khirki Extension and Pushp Vihar, many of whom search for a dentist for teeth cleaning in South Delhi near Malviya Nagar before choosing Globodent Dental Spa for its consistent, patient-friendly approach to preventive dental care.",
+  ],
+  faqs: [
+    { q: "How often should I get my teeth professionally cleaned?", a: "Most dentists recommend cleaning every six months, though people with gum disease, heavy tartar build-up or conditions like diabetes may need more frequent visits as advised individually." },
+    { q: "Does teeth cleaning hurt?", a: "Cleaning is generally comfortable, though people with sensitive gums or significant tartar build-up may feel mild discomfort during scaling, which usually settles quickly once the procedure is complete." },
+    { q: "Will cleaning make my teeth whiter?", a: "Polishing removes surface stains from tea, coffee and tobacco, making teeth look cleaner and slightly brighter, though it is not the same as a dedicated whitening treatment." },
+    { q: "Is scaling safe for my enamel?", a: "Yes, professional scaling only removes tartar and plaque sitting on the tooth surface; it does not wear away healthy enamel when performed correctly by a trained dentist." },
+    { q: "Why do my gums bleed during cleaning?", a: "Bleeding usually indicates inflamed gums caused by plaque and tartar irritation, not damage from the cleaning itself. It typically reduces with regular cleanings and better home care." },
+    { q: "Can children get their teeth professionally cleaned?", a: "Yes, children can have routine cleanings once their permanent teeth start coming in, and it is a good habit to introduce early alongside regular dental checkups." },
+    { q: "Will my teeth feel different after cleaning?", a: "Many patients notice a smoother feel on their teeth and fresher breath immediately after cleaning, since tartar and plaque deposits have been removed from all surfaces." },
+    { q: "Do I still need to brush and floss if I get regular cleanings?", a: "Absolutely, professional cleaning complements but does not replace daily brushing and flossing, which are essential to prevent new plaque build-up between visits." },
+    { q: "Can teeth cleaning fix loose teeth?", a: "Cleaning can help stabilise mildly loose teeth caused by early gum disease by removing irritants, but more advanced cases may need additional periodontal treatment." },
+    { q: "Is teeth cleaning covered in a general dental checkup?", a: "Cleaning is often recommended alongside a checkup since it allows the dentist to clearly see tooth surfaces for cavities, but it is usually billed and performed as a distinct procedure." },
+  ],
+  closing: [
+    "Routine teeth cleaning is one of the simplest, most effective habits for protecting your smile long-term, catching problems early and keeping your gums healthy. Skipping it for too long often means facing bigger, more expensive dental issues down the line, so consistency matters more than intensity.",
+    "If it has been a while since your last cleaning, Globodent Dental Spa in Malviya Nagar offers a comfortable, thorough experience for patients across Saket, Hauz Khas and the wider South Delhi area. Schedule your appointment today and give your smile the fresh start it deserves.",
+  ],
+};
+
+export default content;

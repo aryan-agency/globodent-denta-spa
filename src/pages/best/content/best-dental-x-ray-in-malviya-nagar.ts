@@ -1,0 +1,82 @@
+import type { BestServiceContent } from "./types";
+
+const content: BestServiceContent = {
+  slug: "best-dental-x-ray-in-malviya-nagar",
+  about: [
+    "Dental X-rays, including RVG, OPG, and CBCT scans, give dentists a detailed view of what lies beneath the gum line and inside the jawbone. Patients looking for the best dental X-ray in Malviya Nagar rely on this imaging to accurately diagnose issues that are not visible during a routine check-up, such as decay between teeth, bone loss, impacted teeth, or hidden infections.",
+    "These scans are useful for nearly everyone who visits the dentist, from children needing to check developing teeth to adults preparing for implants, root canals, or orthodontic treatment. RVG (Radiovisiography) offers quick, low-radiation images of individual teeth, OPG (Orthopantomogram) captures a panoramic view of the entire jaw, and CBCT (Cone Beam CT) provides detailed 3D imaging for complex cases.",
+    "Accurate imaging matters because many dental problems progress silently. A dentist for dental X-ray in South Delhi may recommend a scan even when there is no visible pain, since early detection of cavities, cysts, or bone changes allows for simpler, less invasive treatment. Without this imaging, certain conditions could go unnoticed until they become more serious.",
+    "X-rays are typically recommended during new patient exams, before procedures like extractions, implants, or root canals, when monitoring gum disease, or when a patient reports unexplained pain. CBCT in particular is advised for implant planning and evaluating complex root canal anatomy, where standard 2D images are not sufficient.",
+    "The impact on long-term oral health is significant. Timely, accurate imaging helps prevent minor issues from turning into extensive, costly problems, supports precise treatment planning, and allows dentists to monitor changes over time. For patients across Malviya Nagar and South Delhi, reliable dental X-ray facilities are a foundational part of comprehensive dental care.",
+  ],
+  benefits: [
+    { title: "Early Detection of Decay", text: "RVG X-rays can reveal cavities forming between teeth long before they are visible to the naked eye, allowing simpler treatment at an earlier stage." },
+    { title: "Complete Jaw Overview", text: "OPG imaging captures the entire upper and lower jaw in a single scan, useful for spotting impacted teeth, cysts, or bone irregularities." },
+    { title: "Detailed 3D Planning", text: "CBCT scans provide precise three-dimensional detail, especially valuable for implant placement and understanding complex tooth root structures." },
+    { title: "Low Radiation Exposure", text: "Modern digital X-ray systems use significantly less radiation than older film-based methods, making imaging safer for repeated diagnostic use." },
+    { title: "Faster, Digital Results", text: "Digital imaging produces results within moments, allowing our dentists to review findings with you during the same appointment." },
+    { title: "Better Treatment Accuracy", text: "Having a clear internal view of teeth and bone helps dentists plan procedures like root canals or extractions with greater precision." },
+    { title: "Monitors Gum and Bone Health", text: "Regular imaging can track bone density changes around teeth, an important indicator in managing gum disease over time." },
+    { title: "Supports Orthodontic Assessment", text: "OPG scans help orthodontists evaluate tooth positioning, roots, and jaw structure before planning braces or aligner treatment." },
+    { title: "Useful for Emergency Diagnosis", text: "In cases of sudden pain or trauma, X-rays quickly reveal fractures, infections, or displaced teeth that guide urgent treatment decisions." },
+  ],
+  signsIntro: "A dental X-ray may be recommended if you experience any of the following:",
+  signs: [
+    "Persistent tooth pain with no obvious visible cause",
+    "Swelling or a recurring bump on the gums near a tooth",
+    "Difficulty identifying the source of sensitivity to hot or cold",
+    "Planning for dental implants, root canal, or wisdom tooth removal",
+    "A child’s delayed or unusual tooth eruption pattern",
+    "History of gum disease requiring bone level monitoring",
+    "Suspected impacted or misaligned teeth",
+    "Recent facial or dental trauma requiring assessment",
+  ],
+  process: [
+    { title: "Clinical Examination", text: "The dentist first examines your mouth and discusses your symptoms to determine which type of X-ray, RVG, OPG, or CBCT, is appropriate." },
+    { title: "Positioning for the Scan", text: "You are seated comfortably, and a lead apron is provided where needed to minimise radiation exposure to the rest of the body." },
+    { title: "Capturing the Image", text: "Using digital equipment, the required scan is taken; RVG usually takes seconds per tooth while OPG and CBCT capture wider views in a single rotation." },
+    { title: "Digital Image Review", text: "The image appears almost instantly on screen, allowing the dentist to review it with you and point out areas of concern." },
+    { title: "Diagnosis and Discussion", text: "Based on the findings, the dentist explains what the X-ray shows and how it relates to any symptoms or planned treatment." },
+    { title: "Treatment Planning", text: "If further treatment is needed, the imaging is used to plan the most accurate and minimally invasive approach possible." },
+    { title: "Record Keeping", text: "Digital X-rays are securely stored in your patient file, useful for comparison at future visits or referrals to other specialists." },
+  ],
+  whyGlobodent: [
+    { title: "In-house RVG, OPG, and CBCT", text: "We offer a full range of imaging on-site, avoiding the delay of referring patients elsewhere for scans before treatment can proceed." },
+    { title: "Experienced Diagnostic Team", text: "Dr. Rohit Bansal and our specialist dentists interpret imaging carefully, correlating it with clinical findings for accurate diagnosis." },
+    { title: "Digital, Low-radiation Technology", text: "Our imaging equipment is digital, reducing radiation exposure while producing clear, detailed results for reliable diagnosis." },
+    { title: "Support for Implant Planning", text: "Dr. Kamal Aggarwal uses CBCT imaging to plan implant placement with precision, considering bone density and nerve positioning." },
+    { title: "Quick Turnaround", text: "Because scans are processed digitally, results are available within the same visit, avoiding repeat appointments for imaging alone." },
+    { title: "Transparent Explanations", text: "We take time to explain X-ray findings in plain language, so you understand exactly what is happening inside your mouth." },
+    { title: "Trusted Clinic Reputation", text: "With a 4.9-star rating, our clinic is known across Malviya Nagar and South Delhi for careful, evidence-based diagnosis." },
+    { title: "Convenient South Delhi Location", text: "Patients from Saket, Hauz Khas, and beyond find our Shivalik Enclave clinic easy to reach for imaging and follow-up care." },
+  ],
+  whyPatients: [
+    "Full range of RVG, OPG, and CBCT imaging under one roof",
+    "Digital, low-radiation technology for safer diagnostics",
+    "Specialist dentists who explain findings clearly",
+    "Fast, same-visit results and treatment planning",
+    "Trusted, highly rated clinic in Malviya Nagar",
+  ],
+  areas: [
+    "Patients seeking dental X-ray in Malviya Nagar, as well as those travelling from Saket, Hauz Khas, Panchsheel Park, Panchsheel Enclave, Chirag Delhi, Greater Kailash, Sheikh Sarai, Green Park, Khirki Extension, and Pushp Vihar, find our Shivalik Enclave clinic conveniently placed for accurate diagnostic imaging.",
+    "Located close to Malviya Nagar, Hauz Khas, and Saket metro stations, Globodent Dental Spa is a practical choice for anyone across South Delhi looking for dependable RVG, OPG, or CBCT imaging alongside expert dental consultation.",
+  ],
+  faqs: [
+    { q: "What is the difference between RVG, OPG, and CBCT?", a: "RVG captures a detailed image of one or two teeth, OPG gives a panoramic view of the full jaw, and CBCT produces a detailed 3D scan used mainly for implants and complex cases. Each serves a different diagnostic purpose." },
+    { q: "Is dental X-ray radiation safe?", a: "Digital dental X-rays use very low doses of radiation, considered safe for routine diagnostic use. Precautions like lead aprons are used to further minimise any exposure." },
+    { q: "How often should I get a dental X-ray?", a: "This depends on your oral health history; some patients need imaging annually, while others with ongoing treatment or gum disease may need it more frequently, as advised by the dentist." },
+    { q: "Do I need an X-ray for a routine check-up?", a: "Not always. Your dentist will recommend an X-ray only if there is a clinical reason, such as suspected decay between teeth or monitoring bone health." },
+    { q: "Is CBCT necessary for all dental implants?", a: "CBCT is generally recommended before implant placement because it shows bone density and nerve position clearly, helping plan a precise and safe procedure." },
+    { q: "Can children safely get dental X-rays?", a: "Yes, when clinically necessary, digital X-rays are considered safe for children, with appropriate shielding used to limit radiation exposure further." },
+    { q: "How long does it take to get X-ray results?", a: "With digital imaging, results are available within seconds to minutes, allowing the dentist to discuss findings during the same appointment." },
+    { q: "Will I feel any pain during a dental X-ray?", a: "No, dental X-rays are completely painless. You may feel a small sensor or film placed in your mouth briefly for RVG scans." },
+    { q: "Can dental X-rays detect gum disease?", a: "Yes, X-rays can show bone loss around teeth, which is a key indicator used alongside a clinical exam to assess the severity of gum disease." },
+    { q: "Do you provide dental X-ray services near Hauz Khas or Saket?", a: "Yes, our Malviya Nagar clinic is easily accessible from Hauz Khas, Saket, and surrounding South Delhi areas via nearby metro stations." },
+  ],
+  closing: [
+    "Reliable diagnostic imaging is the foundation of accurate dental treatment. At Globodent Dental Spa, our in-house RVG, OPG, and CBCT facilities mean you do not need to travel elsewhere for scans, and our specialists take the time to explain findings clearly so you feel confident about any recommended treatment.",
+    "If you are looking for the best dental X-ray in Malviya Nagar, whether for a routine check, implant planning, or investigating unexplained pain, our team is equipped to provide accurate, timely imaging as part of your overall dental care.",
+  ],
+};
+
+export default content;

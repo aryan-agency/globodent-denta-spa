@@ -1,0 +1,82 @@
+import type { BestServiceContent } from "./types";
+
+const content: BestServiceContent = {
+  slug: "best-oral-surgery-in-malviya-nagar",
+  about: [
+    "Oral surgery covers a range of surgical procedures performed to treat conditions affecting the teeth, gums, jaw, and surrounding oral tissues. This can include wisdom tooth removal, complex extractions, minor gum surgeries, and procedures to prepare the jaw for implants. Patients searching for the best oral surgery in Malviya Nagar are often dealing with pain, impaction, or infection that cannot be resolved through routine dental treatment alone.",
+    "Oral surgery may be recommended for patients of many ages, from teenagers with impacted wisdom teeth to adults needing extraction of a severely damaged tooth. It also applies to patients requiring bone grafting before implant placement or those with cysts, abscesses, or other lesions that need surgical management. A careful clinical evaluation, often supported by imaging, helps determine whether surgery is truly necessary.",
+    "Untreated dental problems that require surgical attention can escalate quickly, leading to spreading infection, persistent pain, or damage to neighbouring teeth. Oral surgery, when properly indicated, addresses the root cause rather than temporarily masking symptoms, helping prevent complications that could otherwise affect your broader health.",
+    "A dentist in Malviya Nagar may recommend oral surgery when a tooth is impacted and pushing against neighbouring teeth, when an infection has progressed beyond what antibiotics alone can resolve, or when a tooth is too badly damaged for a filling, crown, or root canal to save it. Surgical evaluation is also common before certain orthodontic or implant treatments.",
+    "Postponing necessary oral surgery can allow infections to spread to surrounding tissue, cause increasing pain, and in some cases affect nearby teeth or bone. Seeking timely care from a dentist for oral surgery in South Delhi helps manage these risks and supports a smoother, more predictable recovery.",
+  ],
+  benefits: [
+    { title: "Resolves Persistent Pain", text: "Surgical treatment of an infected or impacted tooth addresses the underlying cause of pain rather than offering only temporary relief through medication." },
+    { title: "Prevents Spread of Infection", text: "Removing a source of infection surgically helps stop it from spreading to neighbouring teeth, gum tissue, or deeper structures in the jaw." },
+    { title: "Protects Neighbouring Teeth", text: "Extracting an impacted or badly positioned tooth can relieve pressure on adjacent teeth, helping prevent crowding or misalignment." },
+    { title: "Supports Future Treatment", text: "Certain oral surgeries, such as bone grafting, help prepare the jaw for later procedures like dental implants, improving the chances of successful integration." },
+    { title: "Reduces Risk of Complications", text: "Timely surgical intervention can prevent conditions like cysts or abscesses from worsening, reducing the likelihood of more extensive treatment later." },
+    { title: "Improves Oral Function", text: "Removing a problematic tooth or correcting a jaw-related issue can make chewing and speaking more comfortable over time." },
+    { title: "Minimally Invasive Techniques", text: "Many oral surgery procedures today use refined techniques designed to minimise tissue trauma and support a more comfortable recovery." },
+    { title: "Personalised Pain Management", text: "Oral surgeons plan anaesthesia and post-operative care based on the specific procedure and patient needs, aiming for a manageable recovery experience." },
+    { title: "Addresses Root Causes", text: "Rather than masking symptoms, oral surgery targets the structural or infective issue directly, supporting more lasting resolution." },
+  ],
+  signsIntro: "You may need to consult a dentist about oral surgery if you notice any of these signs:",
+  signs: [
+    "Persistent pain or swelling around a tooth or the jaw",
+    "A wisdom tooth that is partially erupted or impacted",
+    "Recurrent gum infection around a specific tooth",
+    "A tooth that is too damaged to restore with a filling or crown",
+    "Difficulty opening the mouth fully or jaw stiffness",
+    "A visible cyst, lump, or lesion in the gum or jaw area",
+    "Numbness or tingling near a problematic tooth",
+    "A dentist noting overcrowding linked to an unerupted tooth",
+  ],
+  process: [
+    { title: "Clinical Evaluation", text: "The dentist examines the affected area and reviews your symptoms and dental history to understand the nature and severity of the problem." },
+    { title: "Diagnostic Imaging", text: "X-rays or a CT scan help visualise the position of the tooth or affected structure, guiding precise surgical planning before any procedure." },
+    { title: "Treatment Discussion", text: "The recommended surgical approach, anaesthesia option, and expected recovery timeline are explained clearly so you know what to anticipate." },
+    { title: "Surgical Procedure", text: "The procedure is carried out under appropriate local anaesthesia, with the surgical team focused on precision and minimising trauma to surrounding tissue." },
+    { title: "Post-Operative Care Instructions", text: "Detailed guidance on diet, oral hygiene, and medication is provided to support comfortable healing in the days following surgery." },
+    { title: "Follow-Up Review", text: "A follow-up appointment allows the dentist to check healing progress, remove sutures if needed, and address any remaining concerns." },
+  ],
+  whyGlobodent: [
+    { title: "Skilled Surgical Team", text: "Dr. Rohit Bansal and Dr. Kamal Aggarwal bring focused clinical experience to oral surgery cases, from wisdom tooth removal to pre-implant bone procedures." },
+    { title: "Careful Diagnostic Planning", text: "Every surgical case is assessed with appropriate imaging and clinical review, helping the team plan procedures with attention to your specific anatomy." },
+    { title: "15+ Years of Experience", text: "Globodent Dental Spa has managed a wide range of oral surgery cases across more than fifteen years of practice in Malviya Nagar." },
+    { title: "4.9-Star Patient Rating", text: "The clinic's strong reputation reflects the comfort and clarity patients often report during surgical consultations and recovery guidance." },
+    { title: "Calm, Modern Environment", text: "The Shivalik Enclave clinic is set up to help ease patient anxiety, which can be especially valuable before a surgical procedure." },
+    { title: "Clear Pre- and Post-Op Guidance", text: "Patients receive straightforward explanations of what to expect before, during, and after surgery, supporting a smoother recovery experience." },
+    { title: "Coordinated Multidisciplinary Care", text: "When oral surgery is part of a larger treatment plan, such as before implants or orthodontics, the team coordinates closely across specialities." },
+    { title: "Convenient for South Delhi Patients", text: "Located close to Saket, Hauz Khas, and Panchsheel Park, the clinic is an accessible option for patients across South Delhi needing oral surgery." },
+  ],
+  whyPatients: [
+    "Experienced dentists handling routine and complex surgical cases",
+    "4.9-star rated clinic with 15+ years of practice",
+    "Imaging-supported diagnosis and surgical planning",
+    "Clear pre- and post-operative guidance",
+    "Calm, patient-focused clinical environment",
+    "Easily accessible location in Malviya Nagar",
+  ],
+  areas: [
+    "Globodent Dental Spa is a trusted choice for patients seeking oral surgery in Malviya Nagar and the wider South Delhi region. Patients from Saket, Hauz Khas, Panchsheel Park, and Panchsheel Enclave often turn to the clinic for a dentist for oral surgery in South Delhi with an experienced, methodical approach.",
+    "The clinic also welcomes patients travelling from Chirag Delhi, Greater Kailash, Sheikh Sarai, Green Park, Khirki Extension, and Pushp Vihar. With easy access from Malviya Nagar, Hauz Khas, and Saket metro stations, reaching the clinic for surgical consultations and follow-up care is convenient for residents across the area.",
+  ],
+  faqs: [
+    { q: "Is oral surgery painful?", a: "Procedures are performed under local anaesthesia to keep you comfortable during surgery. Mild discomfort afterward is normal and usually manageable with guidance from your dentist." },
+    { q: "How long does recovery take after wisdom tooth removal?", a: "Initial healing typically takes about a week, though the exact timeline can vary depending on the complexity of the extraction and individual healing response." },
+    { q: "Do all wisdom teeth need to be removed?", a: "Not necessarily. Removal is generally recommended when a wisdom tooth is impacted, causing pain, infection, or crowding, which your dentist can assess through imaging." },
+    { q: "What can I eat after oral surgery?", a: "Soft, cool foods are usually recommended for the first few days, gradually returning to a normal diet as advised by your dentist based on your healing progress." },
+    { q: "Is bone grafting a type of oral surgery?", a: "Yes, bone grafting is a surgical procedure sometimes performed to build up jawbone density before implant placement, particularly where bone loss has occurred." },
+    { q: "How do I know if I need oral surgery?", a: "Signs such as persistent pain, swelling, an impacted tooth, or a lesion on the gum warrant a dental evaluation, which may include imaging to determine if surgery is needed." },
+    { q: "Are there risks involved in oral surgery?", a: "As with any surgical procedure, there are some risks, though careful planning, proper technique, and following post-operative instructions help minimise complications." },
+    { q: "How soon can I return to work after oral surgery?", a: "Many patients return to normal routines within a few days, though this depends on the type of surgery performed and how your body responds during recovery." },
+    { q: "Will I need stitches after oral surgery?", a: "Some procedures require sutures to support healing, which may dissolve on their own or need removal at a follow-up visit, depending on the type used." },
+    { q: "How do I find the best oral surgery in Malviya Nagar?", a: "Look for a clinic with experienced surgical dentists, proper diagnostic imaging, and clear communication about the procedure, such as Globodent Dental Spa." },
+  ],
+  closing: [
+    "Oral surgery, when properly indicated and carefully performed, can resolve persistent pain, prevent the spread of infection, and support the long-term health of your teeth and jaw. A thoughtful diagnostic process and clear aftercare guidance play a key role in a smooth surgical experience and recovery.",
+    "If you are considering the best oral surgery in Malviya Nagar, Globodent Dental Spa offers experienced, specialist-supported care from consultation through recovery. Book an appointment to discuss your symptoms and understand the most suitable treatment path for your situation.",
+  ],
+};
+
+export default content;
