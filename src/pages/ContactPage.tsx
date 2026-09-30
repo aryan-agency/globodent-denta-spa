@@ -9,7 +9,7 @@ const ContactPage = () => (
   <>
     <SEOHead
       title="Contact Us | Globodent Dental Spa® - Malviya Nagar, New Delhi"
-      description="Contact Globodent Dental Spa® in Malviya Nagar, South Delhi. Call +91 98555 79244, WhatsApp us, or visit our clinic. Open 3 PM – 8 PM daily."
+      description="Contact Globodent Dental Spa® in Malviya Nagar, South Delhi. Call +91 98555 79244, WhatsApp us, or visit our clinic. Open 24 hours, every day."
       canonical="/contact"
       jsonLd={{
         "@context": "https://schema.org",
@@ -24,7 +24,7 @@ const ContactPage = () => (
           "postalCode": "110017",
           "addressCountry": "IN"
         },
-        "openingHours": "Mo-Su 15:00-20:00"
+        "openingHours": "Mo-Su 00:00-23:59"
       }}
     />
     <div className="pt-20">

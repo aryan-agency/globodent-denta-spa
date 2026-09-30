@@ -8,7 +8,7 @@ interface Profile {
 }
 
 const profiles: Profile[] = [
-  { name: "Instagram", url: "https://www.instagram.com/globodent_dental_spa", Icon: Instagram, brandClass: "hover:text-[#E1306C]" },
+  { name: "Instagram", url: "https://www.instagram.com/globodentdentalclinic/", Icon: Instagram, brandClass: "hover:text-[#E1306C]" },
   { name: "Facebook", url: "https://www.facebook.com/share/1KaWyQDZVC/", Icon: Facebook, brandClass: "hover:text-[#1877F2]" },
   { name: "Google Business", url: "https://share.google/fpfBt0HLywJa6iga6", Icon: MapPin, brandClass: "hover:text-[#4285F4]" },
   { name: "Justdial", url: "https://www.justdial.com/Delhi/Globodent-Dentalspa-Near-Dog-And-Cat-Clinic-Malviya-Nagar/011PXX11-XX11-210721182834-H1M5_BZDET", Icon: Phone, brandClass: "hover:text-[#FFB800]" },

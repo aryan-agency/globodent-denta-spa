@@ -422,7 +422,7 @@ const Home = () => {
             {[
               { q: "Is the root canal treatment really painless?", a: "Yes! We use advanced anesthesia and single-sitting RCT techniques to ensure a completely pain-free experience. Most patients are surprised at how comfortable it is." },
               { q: "How much do dental implants cost at Globodent?", a: "We offer affordable dental implants in Malviya Nagar with flexible payment options. The cost varies based on the type of implant — book a free consultation for an exact quote." },
-              { q: "What are your clinic hours?", a: "We are open from 3 PM to 8 PM. You can book an appointment via WhatsApp or call us at +91 98555 79244." },
+              { q: "What are your clinic hours?", a: `We are ${CLINIC_HOURS.toLowerCase()}. You can book an appointment via WhatsApp or call us at ${PHONE_NUMBER}.` },
               { q: "Do you offer invisible braces / clear aligners?", a: "Yes, we provide clear aligners as a discreet alternative to traditional braces. They are removable, comfortable, and virtually invisible." },
               { q: "Is teeth whitening safe?", a: "Absolutely. Our professional teeth whitening is done under expert supervision using clinically tested products that are safe for your enamel." },
               { q: "How long does a dental implant procedure take?", a: "The implant placement typically takes 30–60 minutes per tooth. The complete process including healing takes 3–6 months for the implant to fully integrate with the jawbone." },

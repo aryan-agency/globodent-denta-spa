@@ -32,7 +32,7 @@ const quickServices = [
 ];
 
 const faqs = [
-  { q: "Is there a dentist open today near Malviya Nagar?", a: `Yes — Globodent Dental Spa is open today from ${CLINIC_HOURS}. Walk-ins are accepted and emergency slots are reserved daily for urgent cases. Call ${PHONE_NUMBER} to confirm availability.` },
+  { q: "Is there a dentist open today near Malviya Nagar?", a: `Yes — Globodent Dental Spa is ${CLINIC_HOURS.toLowerCase()}. Walk-ins are accepted and emergency slots are reserved daily for urgent cases. Call ${PHONE_NUMBER} to confirm availability.` },
   { q: "Do you provide same-day dental treatment?", a: "Absolutely. Many treatments — including single-sitting root canals, tooth extractions, fillings, scaling and emergency pain relief — are completed in one visit, so you don't need to come back multiple times." },
   { q: "How close are you to Saket, Hauz Khas and Green Park?", a: "We are located in Shivalik, Malviya Nagar — just 5–10 minutes' drive from Saket, Hauz Khas, Green Park, Panchsheel Park and Sheikh Sarai. The Malviya Nagar metro station is a short ride away." },
   { q: "Can I book an appointment on WhatsApp?", a: `Yes. Send us a WhatsApp message and our front-desk team will confirm your slot within minutes. You can also call ${PHONE_NUMBER} directly.` },
@@ -56,7 +56,7 @@ const DentalClinicNearMe = () => (
     <section className="relative pt-28 md:pt-32 pb-12 bg-gradient-to-br from-spa-blue-light via-background to-background">
       <div className="container mx-auto px-4 text-center max-w-4xl">
         <span className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4">
-          <MapPin className="h-4 w-4" /> Open Today · {CLINIC_HOURS}
+          <MapPin className="h-4 w-4" /> {CLINIC_HOURS}
         </span>
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4">
           Dental Clinic Near Me in Malviya Nagar
@@ -132,7 +132,7 @@ const DentalClinicNearMe = () => (
               <Clock className="h-5 w-5 text-primary shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold mb-1">Hours</h3>
-                <p className="text-sm text-muted-foreground">Open daily · {CLINIC_HOURS}</p>
+                <p className="text-sm text-muted-foreground">{CLINIC_HOURS}</p>
               </div>
             </div>
             <div className="flex gap-3">

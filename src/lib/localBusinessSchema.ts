@@ -53,9 +53,9 @@ export const buildLocalBusinessSchema = (opts: {
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "15:00",
-      closes: "20:00",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "00:00",
+      closes: "23:59",
     },
   ],
   medicalSpecialty: ["Dentistry", "Endodontic", "Prosthodontic", "Orthodontic", "CosmeticDentistry"],
@@ -72,6 +72,7 @@ export const buildLocalBusinessSchema = (opts: {
   ].map((s) => ({ "@type": "MedicalProcedure", name: s })),
   sameAs: [
     "https://www.google.com/search?q=Globodent+Dental+Spa+Malviya+Nagar",
+    "https://www.instagram.com/globodentdentalclinic/",
   ],
   aggregateRating: {
     "@type": "AggregateRating",
