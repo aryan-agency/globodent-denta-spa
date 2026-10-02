@@ -100,7 +100,7 @@ const BestDentistMalviyaNagar = () => (
 
     <h3>Emergency Dental Care</h3>
     <p>
-      Toothaches don’t schedule themselves. We keep emergency slots open every day for sudden
+      Toothaches don’t schedule themselves. We keep emergency slots open on working days for sudden
       pain, broken teeth, swelling and post-injury care. Quick action often saves the tooth — and
       saves you the bigger bill that comes from waiting too long. Patients searching for a{" "}
       <Link to="/blog/root-canal-treatment-in-malviya-nagar">root canal treatment in Malviya Nagar</Link>{" "}

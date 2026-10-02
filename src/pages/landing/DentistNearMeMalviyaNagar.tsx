@@ -90,7 +90,7 @@ const DentistNearMeMalviyaNagar = () => (
     <h3>Emergency Dental Care, Close to Home</h3>
     <p>
       Tooth pain at night, a chipped tooth before an event, swelling that won’t settle — we keep
-      slots open daily for emergencies. If you’re reading this in pain, call us first. Most cases
+      slots open on working days for emergencies. If you’re reading this in pain, call during clinic hours. Most cases
       involving severe sensitivity or throbbing pain are handled with{" "}
       <Link to="/blog/root-canal-treatment-in-malviya-nagar">prompt root canal treatment in Malviya Nagar</Link>,
       often in a single visit.
