@@ -32,11 +32,11 @@ const quickServices = [
 ];
 
 const faqs = [
-  { q: "Is there a dentist open today near Malviya Nagar?", a: `Yes — Globodent Dental Spa is ${CLINIC_HOURS.toLowerCase()}. Walk-ins are accepted and emergency slots are reserved daily for urgent cases. Call ${PHONE_NUMBER} to confirm availability.` },
+  { q: "When is your dentist available near Malviya Nagar?", a: `Globodent Dental Spa hours: ${CLINIC_HOURS}. Walk-ins and emergency slots are available on working days, subject to availability. Call ${PHONE_NUMBER} to confirm a slot.` },
   { q: "Do you provide same-day dental treatment?", a: "Absolutely. Many treatments — including single-sitting root canals, tooth extractions, fillings, scaling and emergency pain relief — are completed in one visit, so you don't need to come back multiple times." },
   { q: "How close are you to Saket, Hauz Khas and Green Park?", a: "We are located in Shivalik, Malviya Nagar — just 5–10 minutes' drive from Saket, Hauz Khas, Green Park, Panchsheel Park and Sheikh Sarai. The Malviya Nagar metro station is a short ride away." },
   { q: "Can I book an appointment on WhatsApp?", a: `Yes. Send us a WhatsApp message and our front-desk team will confirm your slot within minutes. You can also call ${PHONE_NUMBER} directly.` },
-  { q: "Do you handle dental emergencies after hours?", a: "For genuine emergencies — severe pain, swelling, dental trauma — we make every effort to accommodate same-day or next-morning slots. Call us first and we'll guide you on next steps." },
+  { q: "Do you handle dental emergencies?", a: "For genuine emergencies — severe pain, swelling, dental trauma — call us during clinic hours. We will guide you on the next available slot." },
 ];
 
 const jsonLd = buildLocalBusinessSchema({
@@ -94,7 +94,7 @@ const DentalClinicNearMe = () => (
               <AlertCircle className="h-8 w-8 text-primary shrink-0" />
               <div>
                 <h3 className="font-semibold mb-1">Emergency Care</h3>
-                <p className="text-xs text-muted-foreground">Severe pain or swelling? Call us — we keep emergency slots open daily.</p>
+                <p className="text-xs text-muted-foreground">Severe pain or swelling? Call during clinic hours for an available emergency slot.</p>
               </div>
             </CardContent>
           </Card>
@@ -195,7 +195,7 @@ const DentalClinicNearMe = () => (
         <ScrollReveal>
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-center mb-3">Dental Emergency? We're Here.</h2>
           <p className="text-center text-muted-foreground mb-6">
-            Sudden tooth pain, swelling, a knocked-out tooth or a broken filling can't wait. Globodent reserves daily emergency slots for nearby patients — call us, describe your symptoms, and our team will guide you on whether to come in immediately or take interim relief at home. Most dental emergencies are resolved on the same day.
+            Sudden tooth pain, swelling, a knocked-out tooth or a broken filling needs prompt attention. On working days, call us during clinic hours, describe your symptoms, and our team will guide you on the next available appointment. Same-day care depends on availability.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button asChild size="lg" className="gap-2">
